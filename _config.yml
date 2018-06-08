@@ -1,22 +1,22 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: ARINE-Lab
+SEOTitle: ARINE-Lab | hhit
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: ""
-keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+email: arine_lab@163.com
+description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
+keyword: "ARtificial,INtelligencE,LABoratory,huaihaigongxueyuan,huaihai,LianYunGang,Artificial Intelligence,Machine Learning"
+url: "https://www.nzwang-lab.net/"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
+weibo_username:    ARINE-Lab
+zhihu_username:     ARINE-Lab
+github_username:    arine-hhit
 #twitter_username:  huxpro
-facebook_username:  huxpro
+facebook_username:  arine-Lab
 
 
 
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: ARINE-Lab
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -62,14 +62,14 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: ARINE-Lab.me
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
+sidebar-avatar:       # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -82,11 +82,11 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
+        title: "ARINE-Lab",
+        href: "https://www.nzwang-lab.net/"
     },{
-        title: "Foo",
-        href: "#"
+        title: "Ray",
+        href: "https://github.com/leosky21/RayLiu.github.io"
     },{
         title: "Bar",
         href: "#"
