@@ -1,8 +1,8 @@
 # Site settings
-title: ARINE-Lab
-SEOTitle: ARINE-Lab | hhit
-header-img: img/home-bg.jpg
-email: arine_lab@163.com
+title: ARINE-Lab   # tittle of blog
+SEOTitle: ARINE-Lab | hhit  # header of site
+header-img: img/home-bg.jpg # bg pic
+email: arine_lab@163.com  
 description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
 keyword: "ARtificial,INtelligencE,LABoratory,huaihaigongxueyuan,huaihai,LianYunGang,Artificial Intelligence,Machine Learning"
 url: "https://www.nzwang-lab.net/"              # your host, for absolute URL
@@ -59,15 +59,15 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: arine-hhit
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: arine-hhit
 
 
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: false                           # whether or not using Sidebar.
 sidebar-about-description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
