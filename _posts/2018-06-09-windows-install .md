@@ -1,4 +1,3 @@
-# 2018-06-09-windows-install 
 ---
 layout:     post
 title:      "windows-install "
