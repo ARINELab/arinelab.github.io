@@ -5,25 +5,13 @@
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 Jun 2018 18:49:02 +0800</pubDate>
-    <lastBuildDate>Sat, 09 Jun 2018 18:49:02 +0800</lastBuildDate>
+    <pubDate>Sun, 10 Jun 2018 00:19:27 +0800</pubDate>
+    <lastBuildDate>Sun, 10 Jun 2018 00:19:27 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
-        <title>Windows Install </title>
-        <description>&lt;h1 id=&quot;2018-06-09-windows-install&quot;&gt;2018-06-09-windows-install&lt;/h1&gt;
-&lt;hr /&gt;
-&lt;p&gt;layout:     post
-title:      “windows-install “
-subtitle:   “windows无法完成安装”
-date:       2018-06-09
-author:     “Ray”
-header-img: “”
-tags:
-    - 技巧教程
-    - 系统安装
-—&lt;/p&gt;
-&lt;h3 id=&quot;pe启动盘安装window-系统释放的过程中提示下图所示&quot;&gt;pe启动盘安装window ，系统释放的过程中提示下图所示&lt;/h3&gt;
+        <title>windows-install </title>
+        <description>&lt;h3 id=&quot;pe启动盘安装window-系统释放的过程中提示下图所示&quot;&gt;pe启动盘安装window ，系统释放的过程中提示下图所示&lt;/h3&gt;
 &lt;p&gt;![811528509225&lt;em&gt;.pi](media/15285088496606/811528509225&lt;/em&gt;.pic.jpg)&lt;/p&gt;
 
 &lt;p&gt;###First Step&lt;/p&gt;
@@ -88,6 +76,10 @@ http://www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，�
         <pubDate>Sat, 09 Jun 2018 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2018/06/09/windows-install/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/06/09/windows-install/</guid>
+        
+        <category>技巧教程</category>
+        
+        <category>系统安装</category>
         
         
       </item>

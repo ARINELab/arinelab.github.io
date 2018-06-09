@@ -1,11 +1,11 @@
 ---
 layout: page
-
+description : The Artificial Intelligence and Neuro-informatics Engineering (ARINE) Laboratory is affiliated with School of Computer Engineering, HuaiHai Institute of Technology (HHIT), which is led by Prof. Dr. Nizhuan Wang. The aim of ARINE Lab is to push the more understanding of brain mechanism using machine learning methods and neuroimage methods, and develop new brain-like intelligence methods to advance the AI research. The research directions consist of data and information mining of multi-modal neuroimaging signals, occupational neuroplasticity, brain plasticity and mental health, brain connectomics and brain fingerprints, neurosurgery and neurobotics, machine learning and brain-like intelligence.
 ---
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
+    <a href="{{ post.url  | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
         </h2>
@@ -30,12 +30,12 @@ layout: page
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path   | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path  | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
     </li>
     {% endif %}
 </ul>
