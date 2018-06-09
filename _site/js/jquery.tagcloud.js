@@ -31,7 +31,7 @@
   };
 
   $.fn.tagcloud.defaults = {
-    size: {start: 20, end: 40, unit: "pt"}
+    size: {start: 14, end: 18, unit: "pt"}
   };
 
   // Converts hex to an RGB array
@@ -60,7 +60,7 @@
 
   function tagColor (color, increment, weighting) {
     rgb = jQuery.map(toRGB(color.start), function(n, i) {
-      ref = Math.round(n + (increment[i] * weighting/5));
+      ref = Math.round(n + (increment[i] * weighting));
       if (ref > 255) {
         ref = 255;
       } else {
