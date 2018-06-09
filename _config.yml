@@ -1,6 +1,6 @@
 # Site settings
 title: ARINE-Lab   # tittle of blog
-SEOTitle: ARINE-Lab | hhit  # header of site
+SEOTitle: ARINE-Lab  # header of site
 header-img: img/home-bg.jpg # bg pic
 email: arine_lab@163.com  
 description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
@@ -14,7 +14,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 RSS: false
 # weibo_username:    ARINE-Lab
 # zhihu_username:     ARINE-Lab
-github_username:    arine-hhit
+github_username:    ARINELab
 #twitter_username:  huxpro
 # facebook_username:  arine-Lab
 
@@ -69,7 +69,7 @@ kramdown:
 # Sidebar settings
 sidebar: false                           # whether or not using Sidebar.
 sidebar-about-description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar:      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -80,21 +80,21 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Friends
-friends: [
-    {
-        title: "ARINE-Lab",
-        href: "https://www.nzwang-lab.net/"
-    },{
-        title: "Ray",
-        href: "https://github.com/leosky21/RayLiu.github.io"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
+# friends: [
+#     {
+#         title: "ARINE-Lab",
+#         href: "https://www.nzwang-lab.net/"
+#     },{
+#         title: "Ray",
+#         href: "https://github.com/leosky21/RayLiu.github.io"
+#     },{
+#         title: "Bar",
+#         href: "#"
+#     },{
+#         title: "Example Friends",
+#         href: "#"
+#     },{
+#         title: "It helps SEO",
+#         href: "#"
+#     }
+# ]
