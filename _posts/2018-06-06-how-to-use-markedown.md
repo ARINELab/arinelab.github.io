@@ -7,7 +7,7 @@ author:     "Ray"
 header-img: "img/post-bg-js-version.jpg"
 tags:
     - markdown
-    - 转载
+    - 技巧教程
 ---
 ## Markdown 的设计哲学
 

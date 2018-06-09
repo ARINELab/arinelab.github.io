@@ -5,9 +5,92 @@
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 Jun 2018 18:05:15 +0800</pubDate>
-    <lastBuildDate>Sat, 09 Jun 2018 18:05:15 +0800</lastBuildDate>
+    <pubDate>Sat, 09 Jun 2018 18:49:02 +0800</pubDate>
+    <lastBuildDate>Sat, 09 Jun 2018 18:49:02 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Windows Install </title>
+        <description>&lt;h1 id=&quot;2018-06-09-windows-install&quot;&gt;2018-06-09-windows-install&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;p&gt;layout:     post
+title:      “windows-install “
+subtitle:   “windows无法完成安装”
+date:       2018-06-09
+author:     “Ray”
+header-img: “”
+tags:
+    - 技巧教程
+    - 系统安装
+—&lt;/p&gt;
+&lt;h3 id=&quot;pe启动盘安装window-系统释放的过程中提示下图所示&quot;&gt;pe启动盘安装window ，系统释放的过程中提示下图所示&lt;/h3&gt;
+&lt;p&gt;![811528509225&lt;em&gt;.pi](media/15285088496606/811528509225&lt;/em&gt;.pic.jpg)&lt;/p&gt;
+
+&lt;p&gt;###First Step&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;重启&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;###Second Step&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;重启仍然不行：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;shift + f10 唤出 命令提示符（shell）&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;regedit&lt;/code&gt;,唤出注册表编辑器 HKEY_LOCAL_MACHINE–&amp;gt;SYSTEM–&amp;gt;Setup–&amp;gt;Status–&amp;gt;ChildCompletion–&amp;gt;setup.exe&lt;/li&gt;
+  &lt;li&gt;打开 setup.exe ，将 1 改成 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;![801528509224&lt;em&gt;.pi](media/15285088496606/801528509224&lt;/em&gt;.pic.jpg)&lt;/p&gt;
+
+&lt;p&gt;###Third Step&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;仍然不行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(目前pe盘中系统非ghost版本）重新进入pe启动盘，
+选择【12】安装原版win7/wwin8系统 ,此举对win10 无效。 
+![831528511077&lt;em&gt;.pi](media/15285088496606/831528511077&lt;/em&gt;.pic.jpg)&lt;/p&gt;
+
+&lt;p&gt;打开解压iso系统包，点击setup.exe,等待重新安装&lt;/p&gt;
+
+&lt;p&gt;跳出window无法安装。重复上述步骤。
+###Forth Step&lt;/p&gt;
+
+&lt;p&gt;下载&lt;code class=&quot;highlighter-rouge&quot;&gt;ghost&lt;/code&gt;版本（系统之家）,进入pe盘，双击打开.iso镜像文件，set.up.exe –&amp;gt; 根据引导执行，稍安勿躁。&lt;/p&gt;
+
+&lt;p&gt;###Fifth Step&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;仍然不行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;更换系统镜像&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+https://msdn.itellyou.cn/  ---&amp;gt; 下载纯净版镜像，需要迅雷解码下载链接（还有各类windows 的软件安装包）
+http://www.yishimei.cn/  ---&amp;gt; 各类教程、工具的下载
+    http://www.yishimei.cn/network/319.html  --&amp;gt; windows 激活工具下载
+http://www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，教程网站都有。
+        `老毛桃`、`u深度``，`u大侠`等等，自行更换。如出一辙。
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;###Sixth Step&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;仍然不行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;换个人&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Jun 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/06/09/windows-install/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/09/windows-install/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Markdown 语法及使用说明</title>
@@ -393,12 +476,12 @@ IT控
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 06 Jun 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/06/06/Markdown-%E8%AF%AD%E6%B3%95%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/06/Markdown-%E8%AF%AD%E6%B3%95%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+        <link>http://localhost:4000/2018/06/06/how-to-use-markedown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/06/how-to-use-markedown/</guid>
         
         <category>markdown</category>
         
-        <category>转载</category>
+        <category>技巧教程</category>
         
         
       </item>
