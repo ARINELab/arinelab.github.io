@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Markdown 语法及使用说明"
+title:      "Markdown Chat"
 subtitle:   "it shows how to use markdown to write blog"
 date:       2018-06-06
 author:     "Ray"
@@ -11,9 +11,9 @@ tags:
 ---
 ## Markdown 的设计哲学
 
-> Markdown 的目標是實現「易讀易寫」。
-> 不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。
-> Markdown 的語法有個主要的目的：用來作為一種網路內容的*寫作*用語言。
+> Markdown 的目标「易读易写」。
+> 不过最需要强调的是他的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文字发布，并且开起来不会向用很多标签或者指令标记。
+> Markdown 的语法有个主要的目的：用来作为一种网络内容的*写作*用语言。
 
 <!-- more -->
 
