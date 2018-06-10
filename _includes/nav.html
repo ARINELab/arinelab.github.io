@@ -22,13 +22,57 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="{{ site.baseurl }}/">Home</a>
+                        <a href="{{ site.baseurl }}/">Home/首页</a>
                     </li>
-                    {% for page in site.pages %}{% if page.title %}
+                    {% for page in site.pages %}
+                    	{% if page.title == "MEMORABILIA/大事记"%}
                     <li>
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
-                    {% endif %}{% endfor %}
+                    	{% endif %}
+                    	{% endfor %}
+                    	
+                    	{% for page in site.pages %}
+                    	{% if page.title == "Members/成员介绍"%}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                    	{% endif %}
+                    	{% endfor %}
+                    	
+                    	{% for page in site.pages %}
+                    	{% if page.title == "Software/支持"%}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                    	{% endif %}
+                    		{% endfor %}
+                    		
+                    		{% for page in site.pages %}
+                    	{% if page.title == "Publications/文章"%}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                    	{% endif %}
+                    		{% endfor %}
+                    		
+                    		
+                    		
+                    		{% for page in site.pages %}
+                    	{% if page.title == "CONTACT/联系方式"%}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                    	{% endif %}
+                    		{% endfor %}
+                    		
+                    		{% for page in site.pages %}
+                    	{% if page.title == "Marked/资讯教程区"%}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                    	{% endif %}
+                    	{% endfor %}
                 </ul>
             </div>
         </div>

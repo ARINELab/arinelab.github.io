@@ -1,0 +1,93 @@
+---
+layout: default
+header-img: "img/home-gb.jpg"
+---
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div id="tag-heading" class="site-heading">
+                    <h2>{% if page.title %}{{ page.title }}{% endif %}</h2>
+                    <hr class="small">
+                    <span align="left" class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+<!-- USE SIDEBAR -->
+   
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Short introduce -->
+                <section class="visible-md visible-lg">
+                    <hr><h4><a href="{{'/members/' | prepend: site.baseurl }}"><font size="4" style="color:#101010; text-align:left;">Introduction to ARINE Lab</font></a></h4>
+                    <hr>
+                    <div class="short-about">
+                            <p style="color:#111111; text-align:left;LINE-HEIGHT: 28px">
+                            The Artificial Intelligence &amp;Neuro-informatics Engineering (ARINE) Laboratory is affiliated with School of Computer Engineering, HuaiHai Institute of Technology (HHIT), which is led by Prof. Dr. Nizhuan Wang. The aim of ARINE Lab is to push the more understanding of brain mechanism using machine learning methods and neuroimage methods, and develop new brain-like intelligence methods to advance the AI research. The research directions consist of data and information mining of multi-modal neuroimaging signals, occupational neuroplasticity, brain plasticity and mental health, brain connectomics and brain fingerprints, neurosurgery and neurobotics, machine learning and brain-like intelligence.
+                        </p>
+                        <!-- SNS Link -->
+                        <ul class="list-inline">               
+                            <li>
+                                <a target="_blank" href="https://github.com/ARINELab">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </section>
+            </div>
+             <!-- Post Container -->
+              <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                {% if site.featured-tags %}
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">Technical Support</a></h5>
+                    <div class="tags">
+                        {% for tag in site.tags %}
+                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                                <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                    {{ tag[0] }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </section>
+           
+              {% endif %}
+              <hr>
+               </div>
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+                {{ content }}
+            </div>
+    </div>
+</div>

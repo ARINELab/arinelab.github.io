@@ -4,7 +4,7 @@ title:      "Markdown 语法及使用说明"
 subtitle:   "it shows how to use markdown to write blog"
 date:       2018-06-06
 author:     "Ray"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/markdown_use.png"
 tags:
     - markdown
     - 技巧教程

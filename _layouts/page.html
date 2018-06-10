@@ -1,6 +1,6 @@
 ---
 layout: default
-header-img: "img/ex-change.jpg"
+header-img: "img/home-gb.jpg"
 ---
 
 <!-- Page Header -->
@@ -9,7 +9,8 @@ header-img: "img/ex-change.jpg"
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div id="tag-heading" class="site-heading">
-                    <h2>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h2>
+                    <h2>{% if page.title %}{{ page.title }}{% endif %}</h2>
+                    <!-- {% else %}{{ site.title }} -->
                     <hr class="small">
                     <span align="left" class="subheading">{{ page.description }}</span>
                 </div>
@@ -33,7 +34,7 @@ header-img: "img/ex-change.jpg"
                 {% if site.featured-tags %}
                 <section>
                     <!-- no hr -->
-                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">Technical Support</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
