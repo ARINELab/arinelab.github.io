@@ -226,7 +226,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-
+/*
 @-webkit-keyframes fadein {
     0% {
         opacity: 0
@@ -244,8 +244,8 @@
         opacity: 1
     }
 }
-
-.tooltip {
+*/
+/*.tooltip {
     display: block;
     filter: alpha(opacity=0);
     font-size: 12px;
@@ -536,7 +536,7 @@
 
 .strikingly-heading-font:lang(zh-tw) {
     font-family: pragmatica, PingFang TC, Microsoft JhengHei, 微軟正黑體, STXihei, sans-serif
-}
+}*/
 
 ul.list {
     color: #666;
@@ -587,7 +587,7 @@ ol.list li {
     text-transform: uppercase;
     user-select: none
 }
-
+/*
 .edit-btn:lang(ja) {
     font-family: pragmatica, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, Osaka, メイリオ, Meiryo, ＭＳ\ Ｐゴシック, MS PGothic, sans-serif
 }
@@ -1049,7 +1049,7 @@ ol.list li {
 .edit-btn.hidden {
     display: none
 }
-
+*/
 .s-pagination .s-pagination-item {
     -moz-user-select: none;
     -ms-user-select: none;
@@ -3223,7 +3223,7 @@ body.fixed-body {
     display: table-cell;
     vertical-align: middle
 }*/
-
+/*
 .Dropdown-root {
     position: relative
 }
@@ -3626,8 +3626,8 @@ textarea[placeholder]::-webkit-input-placeholder textarea:-moz-placeholder {
 
 .s-btn:lang(zh-tw) {
     font-family: brandon, PingFang TC, Microsoft JhengHei, 微軟正黑體, STXihei, sans-serif
-}
-
+}*/
+/*
 .box .s-btn:first-of-type,
 .s-box .s-btn:first-of-type {
     margin-left: 0
@@ -4583,8 +4583,8 @@ input.s-btn.dark-bg {
 .s-blog-info .s-approved-comments-count:hover {
     color: inherit
 }
-
-.s-blog-info .s-approved-comments-count .entypo-comment {
+*/
+/*.s-blog-info .s-approved-comments-count .entypo-comment {
     margin: 0 4px 0 0;
     opacity: .5;
     position: relative
@@ -5027,8 +5027,8 @@ body:not(.edit) .s-grid-section-cell-content {
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
         border: 2px solid transparent
-    }
-    50% {
+    }*/
+  /*  50% {
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
         border: 2px solid #dd2
@@ -5038,8 +5038,8 @@ body:not(.edit) .s-grid-section-cell-content {
         animation-timing-function: ease-out;
         border: 2px solid transparent
     }
-}
-
+}*/
+/*
 @keyframes blink {
     0% {
         -webkit-animation-timing-function: ease-out;
@@ -5578,20 +5578,20 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     opacity: 0;
     transform: translateX(100%)
 }
-
-@font-face {
+*/
+/*@font-face {
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: 400;
     src: url(/fonts/bebasneue_bold-webfont.db0480ce584a47cfcc74435698c96cc5.woff2) format("woff2"), url(/fonts/bebasneue_bold-webfont.c394f214004ea574f5698875cb2b3bc5.woff) format("woff"), url(/fonts/bebasneue_bold-webfont.f2ecb2abf2ada45e2e884a689354777b.ttf) format("truetype")
 }
-
+*/
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-
+/*
 @font-face {
     font-family: FontAwesome;
     font-style: normal;
@@ -7593,12 +7593,12 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
 
 .fa-circle-thin:before {
     content: "\F1DB"
-}
+}*/
 
 /*.fa-header:before {
     content: "\F1DC"
 }*/
-
+/*
 .fa-paragraph:before {
     content: "\F1DD"
 }
@@ -8298,8 +8298,8 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
 
 .fa-percent:before {
     content: "\F295"
-}
-
+}*/
+/*
 @font-face {
     font-family: entypo;
     font-style: normal;
@@ -9960,7 +9960,7 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     width: 50px;
     z-index: 99999
 }
-
+*//*
 @-webkit-keyframes a {
     0% {
         -webkit-transform: rotate(0deg);
@@ -10132,9 +10132,9 @@ li.fancybox-thumbs-loading {
 
 .fancybox-thumbs>ul>li.fancybox-thumbs-active:before {
     opacity: 1
-}
+}*/
 
-@media (max-width:800px) {
+/*@media (max-width:800px) {
     .fancybox-thumbs {
         display: none!important
     }
@@ -10143,7 +10143,7 @@ li.fancybox-thumbs-loading {
     .fancybox-container--thumbs .fancybox-slider-wrap {
         right: 0
     }
-}
+}*/
 
 #s-content.s-font-body-hei .s-font-body,
 #s-content.s-font-heading-hei .s-font-heading,
@@ -10340,13 +10340,13 @@ li.fancybox-thumbs-loading {
     text-transform: none
 }
 
-.app-mode {
+/*.app-mode {
     margin-top: 50px
 }
 
 .app-mode.has-mobile-actions {
     margin-bottom: 50px
-}
+}*/
 
 /*#s-nav .nav-item .s-nav-dropdown,
 #s-nav li .s-nav-dropdown,
@@ -12557,8 +12557,8 @@ ul.slides li.slide {
         width: 100%!important
     }
 }
-
-.s-block .s-block-item.s-repeatable-item.s-block-nestedBlock-image {
+/*--------*/
+/*.s-block .s-block-item.s-repeatable-item.s-block-nestedBlock-image {
     margin-left: 0;
     margin-right: 0;
     width: 100%
@@ -13550,8 +13550,8 @@ ul.slides li.slide {
     display: block;
     opacity: 0;
     transform: translateY(-100%)
-}
-
+}*/
+/*
 @media only screen and (max-width:727px) {
     .s-category-drawer-wrapper {
         display: block
@@ -13608,8 +13608,8 @@ ul.slides li.slide {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%)
     }
-}
-
+}*/
+/*
 #navbar-drawer-mask,
 .navbar-drawer-mask {
     background-color: rgba(0, 0, 0, .4);
@@ -13679,8 +13679,8 @@ ul.slides li.slide {
 
 .mobile-actions li a.blue {
     background: rgba(102, 102, 224, .9)
-}
-
+}*/
+/*
 @media only screen and (max-width:727px) {
     #s-new-mobile-actions-wrapper,
     .mobile-actions,
@@ -13769,8 +13769,8 @@ ul.slides li.slide {
     width: 100%;
     z-index: 90
 }
-
-.s-ecommerce .s-ecommerce-content .s-ecommerce-products-wrapper .s-component-overlay.visible,
+*/
+/*.s-ecommerce .s-ecommerce-content .s-ecommerce-products-wrapper .s-component-overlay.visible,
 .s-ecommerce .s-ecommerce-content .s-ecommerce-products-wrapper .s-component-overlay:hover {
     opacity: 1
 }
@@ -13792,7 +13792,7 @@ ul.slides li.slide {
     margin-bottom: -50px;
     overflow: hidden
 }
-
+*//*
 @media screen and (max-width:727px) {
     .s-ecommerce .s-ecommerce-content .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-cards-wrapper .s-ecommerce-card-view-cards {
         margin-bottom: -30px
@@ -13900,7 +13900,7 @@ ul.slides li.slide {
     transition: transform .6s;
     transition: transform .6s, -webkit-transform .6s
 }
-
+*//*
 @media screen and (min-width:727px) {
     .s-ecommerce .s-ecommerce-content .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-cards-wrapper .s-ecommerce-card-view-cards .s-ecommerce-card-view-card .s-ecommerce-card-view-card-image.in-stock:hover .s-ecommerce-card-view-card-image-overlay {
         opacity: .8
@@ -23759,4 +23759,4 @@ li.slide.s-first-visible-section .s-section:not(.no-resize).s-title-section {
 
 .s-page-site-search {
     margin-top: 20px
-}
+}*/
