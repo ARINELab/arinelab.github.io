@@ -40,6 +40,14 @@
                     	{% endif %}
                     	{% endfor %}
                     	
+                        {% for page in site.pages %}
+                        {% if page.title == "Publications/文章"%}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                        {% endif %}
+                            {% endfor %}
+
                     	{% for page in site.pages %}
                     	{% if page.title == "Software/支持"%}
                     <li>
@@ -48,13 +56,7 @@
                     	{% endif %}
                     		{% endfor %}
                     		
-                    		{% for page in site.pages %}
-                    	{% if page.title == "Publications/文章"%}
-                    <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </li>
-                    	{% endif %}
-                    		{% endfor %}
+                    	
                     		
                     		
                     		
