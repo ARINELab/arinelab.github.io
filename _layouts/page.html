@@ -45,16 +45,10 @@ header-img: "img/ex-change.jpg"
                     </div>
                 </section>
                 {% endif %}
-                 <!-- Friends Blog -->
-                {% if site.friends %}
+                
                 <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+                
+                
             </div>
     <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
@@ -121,16 +115,16 @@ header-img: "img/ex-change.jpg"
                                 </a>
                             </li>
                             {% endif %}         
-                            {% if site.github_username %}
+                            
                             <li>
-                                <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                                <a target="_blank" href="https://github.com/ARINELab">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                             </li>
-                            {% endif %}
+                            
                         </ul>
                     </div>
                 </section>
