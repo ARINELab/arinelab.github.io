@@ -7,7 +7,7 @@ author:     "ray"
 header-img: "img/centosInstall.jpg"
 tags:
     - 技巧教程
-    - Centos7
+    - 系统安装
 ---
 
 ## u盘安装centos7
