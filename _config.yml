@@ -1,10 +1,10 @@
 # Site settings
-title: ARINE-Lab   # tittle of blog
-SEOTitle: ARINE-Lab  # header of site
+title: ARINE Lab   # tittle of blog
+SEOTitle: arinelab  # header of site
 header-img: img/home-bg.jpg # bg pic
 email: arine_lab@163.com  
 description: "nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics."
-keyword: "ArineLab,Lab,教程,ARtificial,INtelligencE,LABoratory,huaihaigongxueyuan,huaihai,LianYunGang,Artificial Intelligence,Machine Learning"
+keyword: "arinelab,arine,,教程,ARtificial,INtelligencE,LABoratory,huaihaigongxueyuan,huaihai,LianYunGang,Artificial Intelligence,Machine Learning"
 url: "https://www.nzwang-lab.net/"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
