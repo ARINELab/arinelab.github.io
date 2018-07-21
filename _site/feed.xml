@@ -1,82 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ARINE-Lab</title>
+    <title>ARINE Lab</title>
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 20 Jul 2018 03:13:11 +0800</pubDate>
-    <lastBuildDate>Fri, 20 Jul 2018 03:13:11 +0800</lastBuildDate>
+    <pubDate>Sat, 21 Jul 2018 09:15:23 +0800</pubDate>
+    <lastBuildDate>Sat, 21 Jul 2018 09:15:23 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
-    
-      <item>
-        <title>windows-install </title>
-        <description>&lt;h3 id=&quot;pe启动盘安装window-系统释放的过程中提示下图所示&quot;&gt;pe启动盘安装window ，系统释放的过程中提示下图所示&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/win_install.jpg&quot; alt=&quot;811528509225_.pi&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;first-step&quot;&gt;First Step&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;重启&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;second-step&quot;&gt;Second Step&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;重启仍然不行：&lt;/code&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;shift + f10 唤出 命令提示符（shell）&lt;/li&gt;
-  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;regedit&lt;/code&gt;,唤出注册表编辑器 HKEY_LOCAL_MACHINE–&amp;gt;SYSTEM–&amp;gt;Setup–&amp;gt;Status–&amp;gt;ChildCompletion–&amp;gt;setup.exe&lt;/li&gt;
-  &lt;li&gt;打开 setup.exe ，将 1 改成 3&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;![801528509224&lt;em&gt;.pi](/img/15285088496606/801528509224&lt;/em&gt;.pic.jpg)&lt;/p&gt;
-
-&lt;h3 id=&quot;third-step&quot;&gt;Third Step&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;仍然不行&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;(目前pe盘中系统非ghost版本）重新进入pe启动盘，
-选择【12】安装原版win7/wwin8系统 ,此举对win10 无效。 
-![831528511077&lt;em&gt;.pi](/img/15285088496606/831528511077&lt;/em&gt;.pic.jpg)&lt;/p&gt;
-
-&lt;p&gt;打开解压iso系统包，点击setup.exe,等待重新安装&lt;/p&gt;
-
-&lt;p&gt;跳出window无法安装。重复上述步骤。&lt;/p&gt;
-
-&lt;h3 id=&quot;forth-step&quot;&gt;Forth Step&lt;/h3&gt;
-
-&lt;p&gt;下载&lt;code class=&quot;highlighter-rouge&quot;&gt;ghost&lt;/code&gt;版本（系统之家）,进入pe盘，双击打开.iso镜像文件，set.up.exe –&amp;gt; 根据引导执行，稍安勿躁。&lt;/p&gt;
-
-&lt;h3 id=&quot;fifth-step&quot;&gt;Fifth Step&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;仍然不行&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;更换系统镜像&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://msdn.itellyou.cn/  ---&amp;gt; 下载纯净版镜像，需要迅雷解码下载链接（还有各类windows 的软件安装包）
-http://www.yishimei.cn/  ---&amp;gt; 各类教程、工具的下载
-http://www.yishimei.cn/network/319.html  --&amp;gt; windows 激活工具下载
-http://www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，教程网站都有。
-            `老毛桃`、`u深度``，`u大侠`等等，自行更换。如出一辙。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;sixth-step&quot;&gt;Sixth Step&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;仍然不行&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;换个人&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 09 Jun 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/06/09/windows-install/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/09/windows-install/</guid>
-        
-        <category>技巧教程</category>
-        
-        <category>系统安装</category>
-        
-        
-      </item>
     
       <item>
         <title>Markdown Chat</title>
@@ -461,13 +392,840 @@ IT控
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 06 Jun 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/06/06/how-to-use-markedown/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/06/how-to-use-markedown/</guid>
+        <pubDate>Fri, 20 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/20/how-to-use-markedown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/20/how-to-use-markedown/</guid>
         
         <category>markdown</category>
         
         <category>技巧教程</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>U盘安装centos7, legacy</title>
+        <description>&lt;h2 id=&quot;u盘安装centos7&quot;&gt;u盘安装centos7&lt;/h2&gt;
+
+&lt;h3 id=&quot;准备工具&quot;&gt;准备工具&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 容量允许的优盘
+2. 下载 UltraISO;
+3. CentOS7光盘镜像; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://mirrors.aliyun.com              阿里云镜像站
+https://mirrors.tuna.tsinghua.edu.cn   清华大学镜像站
+http://mirrors.sohu.com/               搜狐镜像站
+http://mirrors.163.com/                网易镜像站
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ultraiso将iso镜像刻录到u盘&quot;&gt;UltraISO将ISO镜像刻录到U盘&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 安装UltraISO, 并选择试用
+2. 进入主界面
+3. 菜单栏 --&amp;gt; 启动 --&amp;gt; 写入硬盘映像
+4. 选择要写入的优盘或者硬盘. (会被格式化的,建议将其他外界存储设备暂时拔除)
+5. 写入
+6. 便捷启动---&amp;gt; syslinux(如果无法引导系统,则需要执行本步骤)
+7. (必做) 修改u盘名为 'C7' (记住you盘名,后面要用)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;重启需要安装的计算机&quot;&gt;重启需要安装的计算机&lt;/h2&gt;
+&lt;h3 id=&quot;一旦看到电脑品牌启动logo说明固件启动立刻按f2&quot;&gt;一旦看到电脑品牌启动logo,说明固件启动,立刻按f2&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;部分台式机是delete,部分笔记本是f1&lt;/code&gt;
+设置可以 legacy 引导启动.&lt;/p&gt;
+
+&lt;h3 id=&quot;重启固件启动按-f12&quot;&gt;重启,固件启动按 f12&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;部分台式机是 esc&lt;/code&gt;
+选择优盘启动 (从优盘品牌, u盘名等信息判断, 还有什么 xxxStorage 也可能,小概率 .)&lt;/p&gt;
+
+&lt;h3 id=&quot;进入到linux引导界面&quot;&gt;进入到linux引导界面&lt;/h3&gt;
+&lt;p&gt;按下tab 按键, 
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;uefi启动的话,则是按下 e (留意看一下下面一行字,有些不记得了)&lt;/code&gt;
+将语句改成:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;initrd=initrd.img inst.stage2=hd:LABEL=C7 quiet&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C7&lt;/code&gt; 是U盘名字&lt;/p&gt;
+
+&lt;h3 id=&quot;根据引导&quot;&gt;根据引导&lt;/h3&gt;
+
+&lt;p&gt;根据引导一步步执行, 需要桌面环境的不要选择最小安装. 可以选择GNOME 或者KDE 环境&lt;/p&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;https://www.linuxidc.com/Linux/2017-11/148355.htm&lt;/li&gt;
+  &lt;li&gt;https://blog.csdn.net/gsls200808/article/details/49717813&lt;/li&gt;
+  &lt;li&gt;https://blog.csdn.net/Jeffaryhe/article/details/75042971&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/18/centos7-install-by-Usb-flash-drive/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/18/centos7-install-by-Usb-flash-drive/</guid>
+        
+        <category>技巧教程</category>
+        
+        <category>系统安装</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>TIF to MRC</title>
+        <description>&lt;h2 id=&quot;首先将tiff堆转换成单页&quot;&gt;首先将tiff堆转换成单页&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;path='/home/arine-lab/Reference/'; %原文件路径
+savepath='/home/arine-lab/list_tiff/';   %新文件路径    
+
+for i=1:100   %图片层数，可通过windows图片查看器知晓  
+    I = imread([path,'NameOfTiff.tif'],i);   %读入文件的第i页
+    imwrite(I,[savepath,num2str(i,'%04d'),'.tif']);   %保存单层图片，以其在原文件中的顺序命名
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;转换成mrc&quot;&gt;转换成mrc&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://bio3d.colorado.edu/imod/doc/man/tif2mrc.html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	tif2mrc [options]  TIFF_input_files...  MRC_output_file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;批量将tif-转换成mrc的脚本&quot;&gt;批量将tif 转换成mrc的脚本&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#copy the exact files to a new dir ,and tif2mrc the files of the new dir&lt;/span&gt;
+ 
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/list_tiff &lt;span class=&quot;c&quot;&gt;# home of tif pics &lt;/span&gt;
+mkdir ../tif_list &lt;span class=&quot;c&quot;&gt;# a dir for tif_lists&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 300 is the num of tif pics &lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;i&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;300&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;i++&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;do
+	&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
+	mkdir ../tif_list/&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;:1&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;	
+	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;i&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;j&amp;lt;i+25&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;j++&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;do
+	&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$j&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
+	cp ./&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;:1&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;.tif ../tif_list/&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;:1&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;/
+	&lt;span class=&quot;k&quot;&gt;done
+	
+&lt;/span&gt;tif2mrc &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; ../tif_list/&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;:1&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.tif  ../mrc_list/&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;:1&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;.mrc
+&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;参考链接&quot;&gt;参考链接&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;http://bio3d.colorado.edu/imod/doc/man/tif2mrc.html&lt;/li&gt;
+  &lt;li&gt;https://hpc.nih.gov/apps/IMOD.html&lt;/li&gt;
+  &lt;li&gt;http://bio3d.colorado.edu/imod/doc/mrc_format.txt&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/18/Tif2MRC/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/18/Tif2MRC/</guid>
+        
+        <category>mrc</category>
+        
+        <category>技巧教程</category>
+        
+        <category>tif</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Install cuda9.0+tensorflow_gpu1.8+python2.7+ PIP-on-centos7</title>
+        <description>&lt;h2 id=&quot;在centos7-安装cuda90tensorflow_gpu18python27pip&quot;&gt;在centos7 安装cuda9.0+tensorflow_gpu1.8+python2.7+pip&lt;/h2&gt;
+
+&lt;p&gt;##基本信息&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost ~]$ cat /etc/os-release 
+NAME=&quot;CentOS Linux&quot;
+VERSION=&quot;7 (Core)&quot;
+ID=&quot;centos&quot;
+ID_LIKE=&quot;rhel fedora&quot;
+VERSION_ID=&quot;7&quot;
+PRETTY_NAME=&quot;CentOS Linux 7 (Core)&quot;
+ANSI_COLOR=&quot;0;31&quot;
+CPE_NAME=&quot;cpe:/o:centos:centos:7&quot;
+HOME_URL=&quot;https://www.centos.org/&quot;
+BUG_REPORT_URL=&quot;https://bugs.centos.org/&quot;
+
+CENTOS_MANTISBT_PROJECT=&quot;CentOS-7&quot;
+CENTOS_MANTISBT_PROJECT_VERSION=&quot;7&quot;
+REDHAT_SUPPORT_PRODUCT=&quot;centos&quot;
+REDHAT_SUPPORT_PRODUCT_VERSION=&quot;7&quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost ~]$ cat /etc/centos-release
+CentOS Linux release 7.5.1804 (Core) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost ~]$ lspci | grep -i nvidia
+03:00.0 VGA compatible controller: NVIDIA Corporation GM206GL [Quadro M2000] (rev a1)
+03:00.1 Audio device: NVIDIA Corporation Device 0fba (rev a1)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;如果没有识别出GPU卡。&lt;code class=&quot;highlighter-rouge&quot;&gt;update-pciids&lt;/code&gt;更新下&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#检查是否有显卡驱动
+ nvidia-smi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;显示没有命令则没有安装&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;如果没有，则 	&lt;code class=&quot;highlighter-rouge&quot;&gt;yum install gcc gcc-c++&lt;/code&gt;安装&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost ~]$ gcc -v
+使用内建 specs。
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+目标：x86_64-redhat-linux
+配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+线程模型：posix
+gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;安装kernel-header和相关开发包&quot;&gt;安装kernel header和相关开发包&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yum install kernel-devel-$(uname -r) kernel-headers-$(uname -r)&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#配置第三方RPM源
+[root@gemfield.org ~]# rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+
+[root@gemfield.org ~]# rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+获取http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+准备中...                          ################################# [100%]
+正在升级/安装...
+   1:elrepo-release-7.0-3.el7.elrepo  ################################# [100%]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;禁用默认nouveau驱动&quot;&gt;禁用默认nouveau驱动&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;原因： 与nvidia驱动冲突&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;1.&lt;code class=&quot;highlighter-rouge&quot;&gt;/lib/modprobe.d/dist-blacklist.conf&lt;/code&gt;  将nvidiafb注释掉
+2.再在该文件中添加一下配置：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blacklist nouveau  
+options nouveau modeset=0 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;重建initramfs-image&quot;&gt;重建initramfs image&lt;/h2&gt;
+&lt;p&gt;如果/boot 分区大小不够，可以备份到其他目录&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak  
+dracut /boot/initramfs-$(uname -r).img $(uname -r) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;重启系统&quot;&gt;重启系统&lt;/h2&gt;
+&lt;h2 id=&quot;确认nouveau是否被禁用&quot;&gt;确认nouveau是否被禁用&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;没有输出则 ok！
+[root@gemfield.org ~]# lsmod | grep nouveau
+[root@gemfield.org ~]#
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;下载cuda_xxxxx_xxxxx_linuxrun&quot;&gt;下载cuda_x.x.xxx_xxx.xx_linux.run&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;target_distro=CentOS&amp;amp;target_version=7&amp;amp;target_type=runfilelocal&amp;gt;
+
+#9.2 的cuda 提供的是9.2的lincublas，tensorflow_gpu 1.8 需要libcublas 9.0。
+#所以cuda装9.0的就行了
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo sh cuda_9.0.176_384.81_linux.run #提示什么都是 accept ，yes ，或者直接回车
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可能会提示驱动其他什么不对。 然后 希望带上 –silent –driver –samples 等等参数，提示什么带上什么。&lt;/p&gt;
+
+&lt;h2 id=&quot;再一次重启&quot;&gt;再一次重启&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost ~]$ nvidia-smi 
+Mon Jul  9 19:18:46 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 396.26                 Driver Version: 396.26                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Quadro M2000        On   | 00000000:03:00.0  On |                  N/A |
+| 56%   35C    P8     9W /  75W |    262MiB /  4043MiB |      3%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0      2073      G   /usr/bin/X                                    70MiB |
+|    0      3271      G   /usr/bin/gnome-shell                         108MiB |
+|    0      4528      G   ...-token=21D0A49A25D99CA82557E0D077F8D389    80MiB |
++-----------------------------------------------------------------------------+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如上所是，则是nvidia驱动也顺带装好了。&lt;/p&gt;
+
+&lt;h3 id=&quot;注意&quot;&gt;注意&lt;/h3&gt;
+&lt;p&gt;也可以先下载nvidia驱动&lt;a href=&quot;https://www.nvidia.cn/Download/index.aspx?lang=cn&quot;&gt;https://www.nvidia.cn/Download/index.aspx?lang=cn&lt;/a&gt;，&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sh NVIDIA-Linux-x86_64-xxx.run #根据提示安装，但是记得选择好版本
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;配置环境变量&quot;&gt;配置环境变量&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gedit ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;写入bashrc文件保存&quot;&gt;写入bashrc文件保存&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpu driver export CUDA_HOME=/usr/local/cuda-9.0 export PATH=/usr/local/cuda-9.0/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH export LD_LIBRARY_PATH=&quot;/usr/local/cuda-9.0/lib:${LD_LIBRARY_PATH}&quot; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;然后source下&quot;&gt;然后source下&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.bashrc  
+nvidia-smi 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;验证结果&quot;&gt;验证结果&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost ~]$ nvcc -V 
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;安装dkms依赖&quot;&gt;安装DKMS依赖&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install -y elfutils-libelf-devel
+rpm -ivh dkms-2.4.0-1.20170926git959bd74.el7.noarch.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;安装元数据包源&quot;&gt;安装元数据包源&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-9.0.176-1.x86_64.rpm&amp;gt;
+
+sudo rpm -ivh cuda-repo-rhel7-9.0.176-1.x86_64.rpm
+
+#更新元数据
+sudo yum clean expire-cache
+sudo yum update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;安装cudnn&quot;&gt;安装cudnn&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;https://developer.nvidia.com/rdp/cudnn-download&amp;gt; 下载forCUDA9.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ tar -xvzf cudnn-9.0-linux-x64-v6.0.tgz $ cp -P cuda/include/cudnn.h /usr/local/cuda-9.0/include 
+$ cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.0/lib64 
+$ chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda-9.0/lib64/libcudnn*
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;test&quot;&gt;Test&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/local/cuda-9.0/sample
+make -C 0_Simple/vectorAdd
+make -C 0_Simple/vectorAddDrv/
+make -C 1_Utilities/bandwidthTest/
+make -C 1_Utilities/deviceQuery
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;然后直接执行测试pass则驱动及cuda安装无问题&quot;&gt;然后直接执行测试，pass则驱动及cuda安装无问题&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ray@localhost samples]$ ./bin/x86_64/linux/release/deviceQuery
+./bin/x86_64/linux/release/deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: &quot;Quadro M2000&quot;
+  CUDA Driver Version / Runtime Version          9.2 / 9.0
+  CUDA Capability Major/Minor version number:    5.2
+  Total amount of global memory:                 4043 MBytes (4239785984 bytes)
+  ( 6) Multiprocessors, (128) CUDA Cores/MP:     768 CUDA Cores
+  GPU Max Clock rate:                            1162 MHz (1.16 GHz)
+  Memory Clock rate:                             3303 Mhz
+  Memory Bus Width:                              128-bit
+  L2 Cache Size:                                 786432 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(65536), 2D=(65536, 65536), 3D=(4096, 4096, 4096)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(16384), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(16384, 16384), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 1 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Disabled
+  Device supports Unified Addressing (UVA):      Yes
+  Supports Cooperative Kernel Launch:            No
+  Supports MultiDevice Co-op Kernel Launch:      No
+  Device PCI Domain ID / Bus ID / location ID:   0 / 3 / 0
+  Compute Mode:
+     &amp;lt; Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) &amp;gt;
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 9.2, CUDA Runtime Version = 9.0, NumDevs = 1
+Result = PASS
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;###常见错误一&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;如果不通过，那就是nvidia driver 和cuda 的driver 版本不匹配。笔者是多次冲突后，
+直接让cuda覆盖原有的nvidia驱动（需要nouveau已经禁止才可以生效）。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;安装tensorflow_gpu&quot;&gt;安装tensorflow_gpu&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install --upgrade tensorflow-gpu
+## 如果 pip install --upgrade tensorflow-gpu == 1..2 则安装1.2版本。
+## 安装其他版本前，先 pip uninstall xxxxxxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;常见错误二&quot;&gt;常见错误二&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;“ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory”
+
+那就将cuda tookit的版本降为8.0 。笔者在这里装9.2 一直报9.0，换9.0的cuda就可以了
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;参考资料&quot;&gt;参考资料&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;https://www.pugetsystems.com/labs/hpc/Install-TensorFlow-with-GPU-Support-the-Easy-Way-on-Ubuntu-18-04-without-installing-CUDA-1170/&lt;/li&gt;
+  &lt;li&gt;https://docs.nvidia.com/cuda/index.html&lt;/li&gt;
+  &lt;li&gt;https://www.jianshu.com/p/ca0cb47ad9a8&lt;/li&gt;
+  &lt;li&gt;https://www.mtyun.com/library/how-to-install-tensorflow-on-centos7&lt;/li&gt;
+  &lt;li&gt;https://github.com/tensorflow/tensorflow/issues/15604&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/18/Install-cuda9.0+tensorflow_gpu1.8+python2.7+-PIP-on-centos7/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/18/Install-cuda9.0+tensorflow_gpu1.8+python2.7+-PIP-on-centos7/</guid>
+        
+        <category>tensourflow_gpu</category>
+        
+        <category>技巧教程</category>
+        
+        <category>Centos7</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>[CentOS 下支持挂载 exFAT 与 NTFS 文件系统]</title>
+        <description>&lt;p&gt;reference : &lt;a href=&quot;https://github.com/gatieme/AderXCoding/tree/master/system/tools/centos_mount_exfat_ntfs&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AderXCoding/system/tools/centos_mount_exfat_ntfs&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;挂载命令&quot;&gt;挂载命令&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ntfs 
+
+mount -t ntfs-3g /dev/sdb1 /mnt/windows/
+OR
+mount /dev/sdb1 /mnt/windows/
+--------------------------------------------------------
+
+fat
+
+sudo mount.exfat /dev/sdc1 /mnt
+OR
+sudo mount /dev/sdc1 /mnt
+---------------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;1-问题&quot;&gt;&lt;a&gt;&lt;/a&gt;1 问题&lt;/h2&gt;
+
+&lt;h3 id=&quot;12-windows-下文件系统&quot;&gt;&lt;a&gt;&lt;/a&gt;1.2 Windows 下文件系统&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Windows&lt;/code&gt;下分区的常见格式有 &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;FAT32&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;exFAT&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;早期大家见得多的格式一般是&lt;code class=&quot;highlighter-rouge&quot;&gt;FAT&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT32&lt;/code&gt;, 不过目前由于单个文件越来越大, 超过 &lt;code class=&quot;highlighter-rouge&quot;&gt;4G&lt;/code&gt;的文件, &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT32&lt;/code&gt; 格式不支持, 所以现在的硬盘格式都会被转换成 &lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;exFAT&lt;/code&gt;格式,&lt;/p&gt;
+
+&lt;h3 id=&quot;13-ntfs-和-exfat-分区格式的特点与区别&quot;&gt;&lt;a&gt;&lt;/a&gt;1.3 NTFS 和 exFAT 分区格式的特点与区别&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS(New Technology File System)&lt;/code&gt; 是 &lt;code class=&quot;highlighter-rouge&quot;&gt;WindowsNT&lt;/code&gt; 和高级服务器网络操作系统环境的文件系统, 设计的目的是提供比 &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT32&lt;/code&gt;更高的可靠性, 并消除 &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT32&lt;/code&gt; 文件系统容量限制. 它除了支持更大的分区和文件、更节约硬盘空间外, 还提供了 &lt;code class=&quot;highlighter-rouge&quot;&gt;FAT32&lt;/code&gt; 文件系统不能提供的长文件名、压缩分区、事件追踪、文件索引、高容错性、数据保护和恢复以及加密访问等功能.&lt;/p&gt;
+
+&lt;p&gt;但是, 为什么闪盘和各种存储卡很少使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS&lt;/code&gt; 进行分区呢? 虽然 &lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS&lt;/code&gt;优点众多, 但它是专为传统机械硬盘而设计的. 它采用了一种” 日志式” 的文件系统, 需要频繁记录磁盘的详细读写操作, 会给闪盘或 &lt;code class=&quot;highlighter-rouge&quot;&gt;SSD&lt;/code&gt; 这类储介质带来额外的负担. 同时, &lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS&lt;/code&gt; 文件系统频繁的读写也影响到闪盘的性能, 带来传输速率的下降。&lt;/p&gt;
+
+&lt;p&gt;为此, 微软在传统 FAT 32 分区的基础上开发了 exFAT 文件系统 (Extended File Allocation Table FileSystem), 既弥补了 FAT32 的局限性和缺点, 又没有 NTFS 那些会影响闪存寿命的功能, 适合各种移动存储卡和闪盘使用。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exFAT&lt;/code&gt; 文件系统具有如下优点:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;分区大小和支持的单个文件大小最大可达 &lt;code class=&quot;highlighter-rouge&quot;&gt;16EB&lt;/code&gt;;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用了剩余空间分配表, 空间利用率更高;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;同一目录下最大文件数可达 65536 个;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;支持访问控制。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;目前, 只有固态硬盘、闪盘和存储卡才能格式化成 &lt;code class=&quot;highlighter-rouge&quot;&gt;exFAT&lt;/code&gt;, 传统硬盘是无法格式化成 &lt;code class=&quot;highlighter-rouge&quot;&gt;exFAT&lt;/code&gt; 格式的, 因此它是一种专门针对闪存的文件系统。&lt;/p&gt;
+
+&lt;h2 id=&quot;2-支持挂载-ntfs-文件系统&quot;&gt;&lt;a&gt;&lt;/a&gt;2 支持挂载 NTFS 文件系统&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat&lt;/code&gt; 格式的文件系统是通过 &lt;code class=&quot;highlighter-rouge&quot;&gt;fuse&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;Filesystem in userspace&lt;/code&gt; ) 模块来支持的&lt;/p&gt;
+
+&lt;h3 id=&quot;21-安装-fuse-exfat&quot;&gt;&lt;a&gt;&lt;/a&gt;2.1 安装 fuse-exfat&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat&lt;/code&gt; 支持是通过 &lt;code class=&quot;highlighter-rouge&quot;&gt;fuse&lt;/code&gt; 模块的方式支持的, 其项目地址是 :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://code.google.com/p/exfat/&quot;&gt;https://code.google.com/p/exfat/&lt;/a&gt; ，当前版本是 : &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.1&lt;/code&gt;
+目前 exfat 的支持已经是全功能支持，支持读写。&lt;/p&gt;
+
+&lt;h4 id=&quot;211-yum-源或者-rpm-包安装&quot;&gt;&lt;a&gt;&lt;/a&gt;2.1.1 yum 源或者 rpm 包安装&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;使用如下命令直接从源中安装&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install fuse-exfat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果提示未找着软件包, 说明您未添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;rpmfusion&lt;/code&gt; 源, 请先添加下载 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm&quot;&gt;rpmfusion-free-release-7.noarch.rpm&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;可尝试添加源后, 再安装&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;下载 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fuse-exfat&lt;/code&gt;包&lt;/a&gt; (必须) 和 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/e&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat-utils&lt;/code&gt;&lt;/a&gt;包直接进行安装&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下载地址 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/fuse-exfat-1.0.1-1.el7.x86_64.rpm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fuse-exfat-1.0.1-1.el7.x86_64.rpm&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下载地址 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/e/exfat-utils-1.0.1-1.el7.x86_64.rpm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat-utils-1.0.1.el7.x86_64.rpm&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;然后直接安装&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rpm -ivh fuse-exfat-1.0.1-1.el7.x86_64.rpm
+sudo rpm -ivh exfat-utils-1.0.1-1.el7.x86_64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;212-srcrpm-源码构建-rpm-安装&quot;&gt;&lt;a&gt;&lt;/a&gt;2.1.2 &lt;code class=&quot;highlighter-rouge&quot;&gt;SRC.RPM&lt;/code&gt; 源码构建 &lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt; 安装&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;虽然不是想说这种方法, 一般来说, 发行版对于每一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;rpm&lt;/code&gt; 或者 &lt;code class=&quot;highlighter-rouge&quot;&gt;deb&lt;/code&gt; 包都会提供其源码包, 方便开发者自行从源码构建安装包, &lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; 等发行版使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get source&lt;/code&gt;下载源码, 使用
+&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get build-dep&lt;/code&gt; 构建其环境, &lt;code class=&quot;highlighter-rouge&quot;&gt;Redhat&lt;/code&gt;等发行版则使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;RPMBUILD&lt;/code&gt; 来构建, 其包成为&lt;code class=&quot;highlighter-rouge&quot;&gt;src.rpm&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;可以下载``src.rpm源代码包, 并自行使用&lt;code class=&quot;highlighter-rouge&quot;&gt;scons&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt;编译, 也可以在&lt;code class=&quot;highlighter-rouge&quot;&gt;rpmfusion&lt;/code&gt;下载源代码&lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt;, 然后通过构建&lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt; 来安装. 这里采用构建 RPM 的方式（这样安装卸载都很方便）。&lt;/p&gt;
+
+&lt;p&gt;下载地址 :
+&lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html&quot;&gt;http://download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;分别下载：fuse-exfat-1.0.1-1-el6.src.rpm 和 exfat-utils-1.0.1-1.el6.src.rpm&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/&quot;&gt;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;编译安装：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;编译前，请先检查系统，如果系统中没有 scons 和 gcc，请通过 yum 安装：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install scons gcc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这个软件是 fuse 模块，编译需要 fuse-devel 包支持：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install fuse-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;下载后，安装源代码 RPM：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -ivh fuse-exfat-1.0.1-1-el6.src.rpm exfat-utils-1.0.1-1.el6.src.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在主目录下，会出现 rpmbuild 目录：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/rpmbuild/SPECS
+rpmbuild -ba fuse-exfat.spec
+rpmbuild -ba exfat-utils.spec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;构建完成后, 即可在 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/rpmbuild/RPMS&lt;/code&gt; 里面找到生成的 &lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt;( 根据系统架构, 分别在 &lt;code class=&quot;highlighter-rouge&quot;&gt;x86_64&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;i386&lt;/code&gt; 目录下, 其中名字中带有 &lt;code class=&quot;highlighter-rouge&quot;&gt;debuginfo&lt;/code&gt; 的包不必安装):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/rpmbuild/RPMS/x86_64
+sudo rpm -ivh fuse-exfat-1.0.1-1.el7.x86_64.rpm
+sudo rpm -ivh exfat-utils-1.0.1-1.el7.x86_64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这样就安装完成了。&lt;/p&gt;
+
+&lt;h3 id=&quot;22-挂载-exfat&quot;&gt;&lt;a&gt;&lt;/a&gt;2.2 挂载 exfat&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;可以通过以下命令来挂载 exfat 的 U 盘了：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mount.exfat /dev/sdc1 /mnt
+OR
+sudo mount /dev/sdc1 /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;3-支持挂载-exfat-文件系统&quot;&gt;&lt;a&gt;&lt;/a&gt;3 支持挂载 exFAT 文件系统&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt; 源中 NTFS 文件系统的支持是由 &lt;code class=&quot;highlighter-rouge&quot;&gt;ntfs-3g&lt;/code&gt; 软件包来完成的&lt;/p&gt;
+
+&lt;h3 id=&quot;31-安装-ntfs-3g-模块&quot;&gt;&lt;a&gt;&lt;/a&gt;3.1 安装 ntfs-3g 模块&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;311-使用-yum-的安装方法&quot;&gt;&lt;a&gt;&lt;/a&gt;3.1.1 使用 yum 的安装方法：&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;请确定你已经安装了 &lt;code class=&quot;highlighter-rouge&quot;&gt;rpmforge&lt;/code&gt; 软件库的源.&lt;/p&gt;
+
+&lt;p&gt;请参考：RHEL/CentOS 5.5 使用第三方软件库&lt;/p&gt;
+
+&lt;p&gt;然后安装下列组件&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install fuse ntfs-3g -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nfts-3g&lt;/code&gt; 并不再标准的源中, 如果提示未找到软件包, 请先添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;EPEL&lt;/code&gt; 源, 参见 &lt;a href=&quot;http://blog.csdn.net/gatieme/article/details/70232358&quot;&gt;CentOS7/RHEL7 安装 EPEL 扩展仓库步骤详解&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;注：如果你在使用 CentOS 5.3 或更旧版本, 那么你需要安装来自 &lt;code class=&quot;highlighter-rouge&quot;&gt;ELRepo&lt;/code&gt; 的&lt;code class=&quot;highlighter-rouge&quot;&gt;mod-fuse&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;312-使用-ntfs-3g-官方源码编译安装&quot;&gt;&lt;a&gt;&lt;/a&gt;3.1.2 使用 ntfs-3g 官方源码编译安装&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;目前 &lt;code class=&quot;highlighter-rouge&quot;&gt;2017-04-19&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ntfs-3g&lt;/code&gt; 的最新版本是 &lt;code class=&quot;highlighter-rouge&quot;&gt;2017-03-23&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;官网 : &lt;a href=&quot;http://www.tuxera.com/community/open-source-ntfs-3g/&quot;&gt;http://www.tuxera.com/community/open-source-ntfs-3g/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ntfs-3g&lt;/code&gt;下载页面 : &lt;a href=&quot;https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz&quot;&gt;https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;安装步骤 :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz
+tar zxvf ntfs-3g_ntfsprogs-2017.3.23.tgz
+cdntfs-3g_ntfsprogs-2017.3.23
+./configure
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yum&lt;/code&gt; 只适用于 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redhat&lt;/code&gt; 系, 编译安装适用于所有 &lt;code class=&quot;highlighter-rouge&quot;&gt;Linux&lt;/code&gt; 发行版&lt;/p&gt;
+
+&lt;h3 id=&quot;32-挂载-ntfs-文件系统&quot;&gt;&lt;a&gt;&lt;/a&gt;3.2 挂载 NTFS 文件系统&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;假设你的 &lt;code class=&quot;highlighter-rouge&quot;&gt;NTFS&lt;/code&gt; 文件系统是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/sdb1&lt;/code&gt; 而你将会把它挂载在 &lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt/windows/c&lt;/code&gt;, 请执行以下步骤.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;创建挂载点。（一般建议挂在 mnt 目录里）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir /mnt/windows/c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;挂载 NTFS 分区：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mount -t ntfs-3g /dev/sdb1 /mnt/windows/c
+OR
+mount /dev/sdb1 /mnt/windows/c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注 : 这里的 &lt;code class=&quot;highlighter-rouge&quot;&gt;sdb1&lt;/code&gt; 是指 &lt;code class=&quot;highlighter-rouge&quot;&gt;SATA&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;SCSI&lt;/code&gt; 硬盘的第一个分区, 如果是老式的 &lt;code class=&quot;highlighter-rouge&quot;&gt;IDE&lt;/code&gt; 硬盘, 会是&lt;code class=&quot;highlighter-rouge&quot;&gt;hda1&lt;/code&gt;, 具体请用 &lt;code class=&quot;highlighter-rouge&quot;&gt;fdisk -l&lt;/code&gt; 查看.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/18/Centos7-mounts-exfat-and-NTFS-file-systems/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/18/Centos7-mounts-exfat-and-NTFS-file-systems/</guid>
+        
+        <category>技巧教程</category>
+        
+        <category>Centos7</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Centos7 install Matlab</title>
+        <description>&lt;h2 id=&quot;centos7-install-matlab2014&quot;&gt;Centos7 install matlab2014&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;其他版本进链接&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;1. 下载 linux 64bit 版本的 matlab 2014b 的安装包&lt;/p&gt;
+
+&lt;p&gt;   下载地址：链接: https://pan.baidu.com/s/1PytH9NpZgrgI_S4e71G0zw  密码: ktz3
+&lt;code class=&quot;highlighter-rouge&quot;&gt;如果失效，请联系邮箱leosky21@hotmail.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2. 创建一个目录（sudo  mkdir /usr/local/src/matlab_r_2014b/matlab_iso） , 把下载的 iso 文件挂载到该目录下&lt;/p&gt;
+
+&lt;p&gt;   执行如下命令：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mount -o loop -t iso9660 /usr/local/src/matlab_r_2014b/matlab_R2014b.iso  /usr/local/src/matlab_r_2014b/matlab_iso
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3. 创建一个安装文件目录（sudo mkdir /usr/local/src/matlab_r_2014b/matlab_install），把挂载的 iso 文件内容全部拷贝到该目录下&lt;/p&gt;
+
+&lt;p&gt;   执行如下命令:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cp -r /usr/local/src/matlab_r_2014b/matlab_iso/* /usr/local/src/matlab_r_2014b/matlab_install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4. 用 crack/install.jar 文件替换掉 /usr/local/src/matlab_r_2014b/matlab_install/java/jar/install.jar 文件&lt;/p&gt;
+
+&lt;p&gt;5. 创建安装目录，我们这里创建的目录是 /usr/local/src/matlab_r_2014b/matlabhome&lt;/p&gt;
+
+&lt;p&gt;执行命令： &lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir -p /usr/local/src/matlab_r_2014b/matlabhome
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;6. 把下载的 crack 文件夹 复制到matlab_r_2014b &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo cp -r path/of/your/crack  /usr/local/src/matlab_r_2014b&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;7. 执行安装，执行如下命令&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ./install -mode silent -fileInstallationKey 29797-39064-48306-32452 -agreeToLicense yes -activationPropertiesFile /usr/local/src/matlab_r_2014b/crack/license.lic -destinationFolder /usr/local/src/matlab_r_2014b/matlabhome
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;参数解释：&lt;/p&gt;
+
+&lt;p&gt;silent：是指开启无人值守安装&lt;/p&gt;
+
+&lt;p&gt;fileInstallationKey：指定一个注册的 key，这个乱填都行，因为我们已经破解了&lt;/p&gt;
+
+&lt;p&gt;activationPropertiesFile： 指定激活文件路径&lt;/p&gt;
+
+&lt;p&gt;destinationFolder： 指定安装目录&lt;/p&gt;
+
+&lt;p&gt;agreeToLicense： 表示同意协议&lt;/p&gt;
+
+&lt;p&gt;8. 待安装完成之后，替换文件 libmwservices.so&lt;/p&gt;
+
+&lt;p&gt;执行命令:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cp /usr/local/src/matlab_r_2014b/crack/libmwservices.so /usr/local/src/matlab_r_2014b/matlabhome/bin/glnxa64/libmwservices.so
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;9. 启动 matlab&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo /usr/local/src/matlab_r_2014b/matlabhome/bin/matlab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;10. 启动之后，界面上回提示你激活，这个时候选择离线激活，并填入文件 license.lic 的完全路径&lt;/p&gt;
+
+&lt;p&gt;我们这次安装的完全路径为 &lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/local/src/matlab_r_2014b/crack/license.lic
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;11. 待激活完成之后，再次启动 matlab，就可以看到温馨的 matlab 工作台了&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/18/CentOS7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85-matlab-2014b/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/18/CentOS7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85-matlab-2014b/</guid>
+        
+        <category>matlab</category>
+        
+        <category>技巧教程</category>
+        
+        <category>Centos7</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>windows-install </title>
+        <description>&lt;h3 id=&quot;pe启动盘安装window-系统释放的过程中提示下图所示&quot;&gt;pe启动盘安装window ，系统释放的过程中提示下图所示&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/win_install.jpg&quot; alt=&quot;811528509225_.pi&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;first-step&quot;&gt;First Step&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;重启&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;second-step&quot;&gt;Second Step&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;重启仍然不行：&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;shift + f10 唤出 命令提示符（shell）&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;regedit&lt;/code&gt;,唤出注册表编辑器 HKEY_LOCAL_MACHINE–&amp;gt;SYSTEM–&amp;gt;Setup–&amp;gt;Status–&amp;gt;ChildCompletion–&amp;gt;setup.exe&lt;/li&gt;
+  &lt;li&gt;打开 setup.exe ，将 1 改成 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;![801528509224&lt;em&gt;.pi](/img/15285088496606/801528509224&lt;/em&gt;.pic.jpg)&lt;/p&gt;
+
+&lt;h3 id=&quot;third-step&quot;&gt;Third Step&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;仍然不行&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(目前pe盘中系统非ghost版本）重新进入pe启动盘，
+选择【12】安装原版win7/wwin8系统 ,此举对win10 无效。 
+![831528511077&lt;em&gt;.pi](/img/15285088496606/831528511077&lt;/em&gt;.pic.jpg)&lt;/p&gt;
+
+&lt;p&gt;打开解压iso系统包，点击setup.exe,等待重新安装&lt;/p&gt;
+
+&lt;p&gt;跳出window无法安装。重复上述步骤。&lt;/p&gt;
+
+&lt;h3 id=&quot;forth-step&quot;&gt;Forth Step&lt;/h3&gt;
+
+&lt;p&gt;下载&lt;code class=&quot;highlighter-rouge&quot;&gt;ghost&lt;/code&gt;版本（系统之家）,进入pe盘，双击打开.iso镜像文件，set.up.exe –&amp;gt; 根据引导执行，稍安勿躁。&lt;/p&gt;
+
+&lt;h3 id=&quot;fifth-step&quot;&gt;Fifth Step&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;仍然不行&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;更换系统镜像&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://msdn.itellyou.cn/  ---&amp;gt; 下载纯净版镜像，需要迅雷解码下载链接（还有各类windows 的软件安装包）
+http://www.yishimei.cn/  ---&amp;gt; 各类教程、工具的下载
+http://www.yishimei.cn/network/319.html  --&amp;gt; windows 激活工具下载
+http://www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，教程网站都有。
+            `老毛桃`、`u深度``，`u大侠`等等，自行更换。如出一辙。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sixth-step&quot;&gt;Sixth Step&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;仍然不行&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;换个人&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Jun 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/06/09/windows-install/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/09/windows-install/</guid>
+        
+        <category>技巧教程</category>
+        
+        <category>系统安装</category>
         
         
       </item>

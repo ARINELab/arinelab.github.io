@@ -2,7 +2,7 @@
 layout:     post
 title:      "Markdown Chat"
 subtitle:   "it shows how to use markdown to write blog"
-date:       2018-06-06
+date:       2018-07-20
 author:     "Ray"
 header-img: "img/markdown_use.png"
 tags:
