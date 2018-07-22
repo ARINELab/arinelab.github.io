@@ -5,9 +5,109 @@
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Jul 2018 09:15:23 +0800</pubDate>
-    <lastBuildDate>Sat, 21 Jul 2018 09:15:23 +0800</lastBuildDate>
+    <pubDate>Sun, 22 Jul 2018 18:01:25 +0800</pubDate>
+    <lastBuildDate>Sun, 22 Jul 2018 18:01:25 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>突破百度云限制,多线程下载下载神器</title>
+        <description>&lt;h2 id=&quot;aria2-linux-完整安装及使用教程&quot;&gt;Aria2 Linux 完整安装及使用教程&lt;/h2&gt;
+
+&lt;h3 id=&quot;0-介绍&quot;&gt;0. 介绍&lt;/h3&gt;
+
+&lt;p&gt;支持http/https 直链, ftp,电驴,磁力链接等等,可以配合网页端. 我主要用来突破百度云的下载限制&lt;/p&gt;
+
+&lt;h3 id=&quot;1-安装&quot;&gt;1. 安装&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Debian/Ubuntu：&lt;/p&gt;
+
+&lt;p&gt;可以直接使用命令安装：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get -y install aria2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;CentOS 7+：&lt;/p&gt;
+
+&lt;p&gt;安装 epel 源：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yum install epel-release&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后直接安装：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yum install aria2 -y&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-配置-aria2&quot;&gt;2. 配置 Aria2&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;21-创建必须的文件夹目录-我们把它放在root用户根目录下每次启动需要su一下&quot;&gt;2.1 创建必须的文件夹目录 (我们把它放在root用户根目录下,每次启动需要su一下)&lt;/h4&gt;
+
+&lt;p&gt;(1) 创建.aria2 目录&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir /root/.aria2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(2) 创建 aria2.session 文件&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;touch /root/.aria2/aria2.session&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(3)  创建 aria2.log&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;touch /root/.aria2/aria2.log&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(4) 配置文件&lt;/p&gt;
+
+&lt;p&gt;创建配置文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;aria2.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;路径 : &lt;code class=&quot;highlighter-rouge&quot;&gt;/root/.aria2/aria2.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(5) 启动 &lt;/p&gt;
+
+&lt;p&gt; 终端 输入 :  &lt;code class=&quot;highlighter-rouge&quot;&gt;aria2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;如果提示未找到命令, 则  先索取root 管理权限 &lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;su&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;aria2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(6) 可以装一个aria2的桌面端&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get -y install screen&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;screen -dmS aria2 aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all -c&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(7) 个人建议直接用浏览器的可视化ui就比较方便,需要装一个Yaaw&lt;/p&gt;
+
+&lt;p&gt;chrome web store :  search  &lt;code class=&quot;highlighter-rouge&quot;&gt;Yaaw&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;add to chrome &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(8)  百度云网页端打开&lt;/p&gt;
+
+&lt;p&gt;chrome 拓展 : search and add :  &lt;code class=&quot;highlighter-rouge&quot;&gt;baiduexporter&lt;/code&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/22/5b54039f4b611.png&quot; alt=&quot;5b54039f4b611&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/22/5b54038846287.png&quot; alt=&quot;5b54038846287&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;导出下载&lt;/p&gt;
+
+&lt;p&gt;打开桌面端aria2c 或者 web端 Yaaw 就可以看到了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/22/5b540409a795e.png&quot; alt=&quot;5b540409a795e&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 22 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/22/Aria2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/22/Aria2/</guid>
+        
+        <category>aria2</category>
+        
+        <category>技巧教程</category>
+        
+        
+      </item>
     
       <item>
         <title>Markdown Chat</title>
@@ -471,8 +571,10 @@ http://mirrors.163.com/                网易镜像站
       </item>
     
       <item>
-        <title>TIF to MRC</title>
+        <title>将tif文件转换成mrc文件</title>
         <description>&lt;h2 id=&quot;首先将tiff堆转换成单页&quot;&gt;首先将tiff堆转换成单页&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;path='/home/arine-lab/Reference/'; %原文件路径
 savepath='/home/arine-lab/list_tiff/';   %新文件路径    
@@ -485,6 +587,8 @@ end
 
 &lt;h2 id=&quot;转换成mrc&quot;&gt;转换成mrc&lt;/h2&gt;
 
+&lt;hr /&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://bio3d.colorado.edu/imod/doc/man/tif2mrc.html&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -492,6 +596,8 @@ end
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;批量将tif-转换成mrc的脚本&quot;&gt;批量将tif 转换成mrc的脚本&lt;/h4&gt;
+
+&lt;hr /&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#copy the exact files to a new dir ,and tif2mrc the files of the new dir&lt;/span&gt;
@@ -516,6 +622,8 @@ mkdir ../tif_list &lt;span class=&quot;c&quot;&gt;# a dir for tif_lists&lt;/span
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;参考链接&quot;&gt;参考链接&lt;/h2&gt;
+&lt;hr /&gt;
+
 &lt;ol&gt;
   &lt;li&gt;http://bio3d.colorado.edu/imod/doc/man/tif2mrc.html&lt;/li&gt;
   &lt;li&gt;https://hpc.nih.gov/apps/IMOD.html&lt;/li&gt;
@@ -527,11 +635,9 @@ mkdir ../tif_list &lt;span class=&quot;c&quot;&gt;# a dir for tif_lists&lt;/span
         <link>http://localhost:4000/2018/07/18/Tif2MRC/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/07/18/Tif2MRC/</guid>
         
-        <category>mrc</category>
+        <category>mrc2tif</category>
         
         <category>技巧教程</category>
-        
-        <category>tif</category>
         
         
       </item>
