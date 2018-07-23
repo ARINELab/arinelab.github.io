@@ -6,7 +6,7 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="keyword"  content="{{ site.keyword }}">
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-
+    <meta http-equiv="Expires" content="3153600" /> <!-- 资源到期时间设为0 -->
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
