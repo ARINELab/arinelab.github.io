@@ -1,18 +1,13 @@
 ---
-
 layout:     post
-title:      "CENTOS7 基于XVNC配置远程桌面可访问与用户权限"
-subtitle:   "基于vnc设置centos7可远程桌面访问"
+title:      "CENTOS7 基于XVNC和RDP配置远程桌面可访问与用户权限"
+subtitle:   "基于Xvnc和RDP设置centos7可远程桌面访问"
 date:       2018-07-24
 author:     "ray"
 header-img: "img/aria2.jpg"
 tags:
-
-```
-- 远程桌面
-- 技巧教程
-```
-
+    - 远程桌面
+    - 技巧教程
 ---
 
 ## CENTOS7 XVNC 远程桌面与用户权限
@@ -159,3 +154,5 @@ linux: 远程桌面连接,选择 vnc协议
 1. http://tigervnc.org/doc/Xvnc.html
 2. https://blog.csdn.net/kwame211/article/details/76014361
 3. http://os.51cto.com/art/201103/249398.htm
+
+
