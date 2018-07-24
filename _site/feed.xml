@@ -5,9 +5,140 @@
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 24 Jul 2018 00:50:44 +0800</pubDate>
-    <lastBuildDate>Tue, 24 Jul 2018 00:50:44 +0800</lastBuildDate>
+    <pubDate>Tue, 24 Jul 2018 13:07:41 +0800</pubDate>
+    <lastBuildDate>Tue, 24 Jul 2018 13:07:41 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>CENTOS7 基于XVNC配置远程桌面可访问与用户权限</title>
+        <description>&lt;h2 id=&quot;centos7-xvnc-远程桌面与用户权限&quot;&gt;CENTOS7 XVNC 远程桌面与用户权限&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-首先是桌面gui环境&quot;&gt;1. 首先是桌面GUI环境&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# GNOME为例
+yum groupinstall &quot;GNOME Desktop&quot;
+# reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-vnc-服务器&quot;&gt;2. VNC 服务器&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# tigerVNC,一个开源的VNC服务应用
+yum install tigervnc-server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-新添加一个可以远程访问的用户&quot;&gt;3. 新添加一个可以远程访问的用户&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd arine
+passwd arine
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;当用户尝试使用VNC访问远程桌面时，VNC守护进程就会启动来处理这个请求，需要为每个用户创建一个独立的VNC配置文件。&lt;/p&gt;
+
+&lt;p&gt;CentOS依靠systemd来管理和配置系统服务，将使用systemd来为用户xmodulo配置VNC服务器。&lt;/p&gt;
+
+&lt;h3 id=&quot;4-检查服务器vnc服务器状态&quot;&gt;4. 检查服务器VNC服务器状态&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 如图表示未激活
+systemctl status vncserver@:.service
+systemctl is-enabled vncserver@.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/24/5b5698143d157.jpg&quot; alt=&quot;5b5698143d157&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-为用户单独创建一个vnc服务配置&quot;&gt;5. 为用户单独创建一个VNC服务配置&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# '1' 是 配置命名,第二个用户可以是2,以此类推
+cp /lib/systemd/system/vncserver@.service/etc/systemd/system/vncserver@:1.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi /etc/systemd/system/vncserver@:1.service
+# 或者
+# gedit /etc/systemd/system/vncserver@:1.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;替换文件中&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;Users&amp;gt;&lt;/code&gt; 为新建的用户 &lt;code class=&quot;highlighter-rouge&quot;&gt;arine&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 编辑 vncservers
+vi /etc/sysconfig/vncservers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;VNCSERVERS=&quot;1:arine&quot;
+VNCSERVERARGS[1]=&quot;-geometry 1366x768&quot; # 屏幕分辨率 1024×768
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 设置登录权限
+vim /etc/group
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 末尾添加:
+arine:x:250:arine
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;6-为远程连接设置密码可选&quot;&gt;6. 为远程连接设置密码(可选)&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 注意, `-` 两边都有空格
+su - arine
+vncpasswd
+
+# 重新加载,使得服务生效
+systemctl daemon-reload
+systemctl enable vncserver@:1.service  # 启动时自动启动VNC服务
+netstat -tulpn | grep vnc # 检查VNC正在监听的端口
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;7-设置防火墙&quot;&gt;7. 设置防火墙&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi /etc/sysconfig/iptables
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 使得防火墙开放80端口
+-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT  
+
+# for vncserver
+-A INPUT -p tcp -m tcp --dport 5901:5903 -j ACCEPT 
+
+# for xrdp
+-A INPUT -m state --state NEW -m tcp -p tcp--dport 3389 -j ACCEPT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;8-防火墙状态&quot;&gt;8. 防火墙状态&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service iptables status # 查看
+service iptables stop #暂停
+chkconfig off
+service iptables restart # 重启
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;9-将远程访问例如开机即加载启动&quot;&gt;9. 将远程访问例如开机即加载启动&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chkconfig xrdp on
+chkconfig vncserver on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;10-远程桌面&quot;&gt;10. 远程桌面&lt;/h3&gt;
+
+&lt;p&gt;windows会自动选择 Xvnc协议.&lt;/p&gt;
+
+&lt;p&gt;linux: 远程桌面连接,选择 vnc协议&lt;/p&gt;
+
+&lt;h3 id=&quot;11-参考资料&quot;&gt;11. 参考资料&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;http://tigervnc.org/doc/Xvnc.html&lt;/li&gt;
+  &lt;li&gt;https://blog.csdn.net/kwame211/article/details/76014361&lt;/li&gt;
+  &lt;li&gt;http://os.51cto.com/art/201103/249398.htm&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 24 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/24/REMOTE-DESTOP-CENTOS7/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/24/REMOTE-DESTOP-CENTOS7/</guid>
+        
+        <category>远程桌面</category>
+        
+        <category>技巧教程</category>
+        
+        
+      </item>
     
       <item>
         <title>突破百度云限制,多线程下载下载神器</title>
