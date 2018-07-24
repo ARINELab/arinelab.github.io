@@ -1,4 +1,5 @@
 ---
+
 layout:     post
 title:      "CENTOS7 基于XVNC配置远程桌面可访问与用户权限"
 subtitle:   "基于vnc设置centos7可远程桌面访问"
@@ -6,8 +7,12 @@ date:       2018-07-24
 author:     "ray"
 header-img: "img/aria2.jpg"
 tags:
-    - 远程桌面
-    - 技巧教程
+
+```
+- 远程桌面
+- 技巧教程
+```
+
 ---
 
 ## CENTOS7 XVNC 远程桌面与用户权限
@@ -135,9 +140,22 @@ windows会自动选择 Xvnc协议.
 
 linux: 远程桌面连接,选择 vnc协议
 
-### 11. 参考资料
+登录是密码则是登录账号与密码
+
+### 11. VNC viewer
+
+`因为出现部分windows连接正常,部分不正常,mac无法使用paraellels client 登录.我们使用了VNC Viewer `
+
+第5步中新建的1.service ,所以我们如下图配置
+
+![5b570c27a7bb7](https://i.loli.net/2018/07/24/5b570c27a7bb7.png)
+
+![5b570cdbac990](https://i.loli.net/2018/07/24/5b570cdbac990.png)
+
+`注意: 此处的密码则是第6步设置的 vncpasswd `
+
+### 13. 参考资料
+
 1. http://tigervnc.org/doc/Xvnc.html
 2. https://blog.csdn.net/kwame211/article/details/76014361
 3. http://os.51cto.com/art/201103/249398.htm
-
-
