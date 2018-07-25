@@ -1,4 +1,5 @@
 ---
+
 layout:     post
 title:      "CENTOS7 基于XVNC和RDP配置远程桌面可访问与用户权限"
 subtitle:   "基于Xvnc和RDP设置centos7可远程桌面访问"
@@ -25,6 +26,19 @@ yum groupinstall "GNOME Desktop"
 ```
 # tigerVNC,一个开源的VNC服务应用
 yum install tigervnc-server
+# rdp
+yum -y install xrdp
+```
+
+```
+# 查看rdp是否安装成功
+systemctl start xrdp.service
+# 检查rdp的端口
+netstat -antup | grep xrdp
+# 如果不成功,查看日志:/var/log/message, 若类似Failed at step EXEC spawning /usr/sbin/xrdp-sesman: Permission denied
+chcon -t bin_t /usr/sbin/xrdp /usr/sbin/xrdp-sesman
+# 系统启动后自动运行
+systemctl enable xrdp.service
 ```
 
 ### 3. 新添加一个可以远程访问的用户
@@ -89,7 +103,21 @@ arine:x:250:arine
 # 注意, `-` 两边都有空格
 su - arine
 vncpasswd
+```
 
+```
+# 配置xstartup
+vi /home/arine/.vnc/xstart
+
+# 内容如下
+
+#Uncomment the following two lines for normal desktop:
+unset SESSION_MANAGER
+unset DEBUG_SESSION_BUS_ADDRESS
+exec /etc/X11/xinit/xinitrc
+```
+
+```
 # 重新加载,使得服务生效
 systemctl daemon-reload
 systemctl enable vncserver@:1.service  # 启动时自动启动VNC服务
@@ -131,7 +159,7 @@ chkconfig vncserver on
 
 ### 10. 远程桌面
 
-windows会自动选择 Xvnc协议.
+windows 远程桌面连接.
 
 linux: 远程桌面连接,选择 vnc协议
 
@@ -139,7 +167,7 @@ linux: 远程桌面连接,选择 vnc协议
 
 ### 11. VNC viewer
 
-`因为出现部分windows连接正常,部分不正常,mac无法使用paraellels client 登录.我们使用了VNC Viewer `
+`因为出现部分windows连接正常,部分不正常,mac无法使用paraellels client 登录.我们使用了VNC Viewer `
 
 第5步中新建的1.service ,所以我们如下图配置
 
@@ -147,7 +175,22 @@ linux: 远程桌面连接,选择 vnc协议
 
 ![5b570cdbac990](https://i.loli.net/2018/07/24/5b570cdbac990.png)
 
-`注意: 此处的密码则是第6步设置的 vncpasswd `
+`注意: 此处的密码则是第6步设置的 vncpasswd `
+
+
+### 12. 如果出现桌面假死,非重启的修复方法如下
+我们都知道 CTRL+ALT+Fn 是进入相应的第n个终端,一般centos中F1 是运行GUI. 实在不知道,按一下就知道了..
+如果桌面假死,鼠标仍在CTRL+ALT+F2 进入终端2.
+然后登陆.
+
+```
+# 查看运行的是什么进程
+ps -t tty1 
+# 然后我们会发现有一个进程..一般就只有一个 是 X,记住它的PID
+# 切换到root
+kill 9 PID 
+# 关闭这个进程,进入登陆界面
+```
 
 ### 13. 参考资料
 

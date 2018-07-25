@@ -1,4 +1,5 @@
 ---
+
 layout:     post
 title:      "U盘安装centos7, legacy"
 subtitle:   "U盘安装centos7, legacy"
@@ -13,10 +14,11 @@ tags:
 ## u盘安装centos7
 
 ### 准备工具
+
 ```
 1. 容量允许的优盘
 2. 下载 UltraISO;
-3. CentOS7光盘镜像; 
+3. CentOS7光盘镜像;
 ```
 
 ```
@@ -39,27 +41,40 @@ http://mirrors.163.com/                网易镜像站
 ```
 
 ## 重启需要安装的计算机
+
 ### 一旦看到电脑品牌启动logo,说明固件启动,立刻按f2
+
 `部分台式机是delete,部分笔记本是f1`
 设置可以 legacy 引导启动.
 
 ### 重启,固件启动按 f12
+
 `部分台式机是 esc`
 选择优盘启动 (从优盘品牌, u盘名等信息判断, 还有什么 xxxStorage 也可能,小概率 .)
 
 ### 进入到linux引导界面
+
+![5b57cd2bee3e7](https://i.loli.net/2018/07/25/5b57cd2bee3e7.png)
+
  按下tab 按键, 
- `uefi启动的话,则是按下 e (留意看一下下面一行字,有些不记得了)`
+ 
 将语句改成:
 `initrd=initrd.img inst.stage2=hd:LABEL=C7 quiet`
 
 `C7` 是U盘名字
+
+
+
+#### 注意: UEFI引导看这里
+
+`UEFI 不是按Tab 而是按下 e , 修改完成后 (ctrl+x 确认)`
 
 ### 根据引导
 
 根据引导一步步执行, 需要桌面环境的不要选择最小安装. 可以选择GNOME 或者KDE 环境
 
 ## 参考
+
 1. https://www.linuxidc.com/Linux/2017-11/148355.htm
 2. https://blog.csdn.net/gsls200808/article/details/49717813
 3. https://blog.csdn.net/Jeffaryhe/article/details/75042971
