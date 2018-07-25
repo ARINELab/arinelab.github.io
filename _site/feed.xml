@@ -5,12 +5,12 @@
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 24 Jul 2018 14:25:44 +0800</pubDate>
-    <lastBuildDate>Tue, 24 Jul 2018 14:25:44 +0800</lastBuildDate>
+    <pubDate>Wed, 25 Jul 2018 10:52:35 +0800</pubDate>
+    <lastBuildDate>Wed, 25 Jul 2018 10:52:35 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
-        <title>CENTOS7 基于XVNC配置远程桌面可访问与用户权限</title>
+        <title>CENTOS7 基于XVNC和RDP配置远程桌面可访问与用户权限</title>
         <description>&lt;h2 id=&quot;centos7-xvnc-远程桌面与用户权限&quot;&gt;CENTOS7 XVNC 远程桌面与用户权限&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-首先是桌面gui环境&quot;&gt;1. 首先是桌面GUI环境&lt;/h3&gt;
@@ -24,6 +24,18 @@ yum groupinstall &quot;GNOME Desktop&quot;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# tigerVNC,一个开源的VNC服务应用
 yum install tigervnc-server
+# rdp
+yum -y install xrdp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 查看rdp是否安装成功
+systemctl start xrdp.service
+# 检查rdp的端口
+netstat -antup | grep xrdp
+# 如果不成功,查看日志:/var/log/message, 若类似Failed at step EXEC spawning /usr/sbin/xrdp-sesman: Permission denied
+chcon -t bin_t /usr/sbin/xrdp /usr/sbin/xrdp-sesman
+# 系统启动后自动运行
+systemctl enable xrdp.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;3-新添加一个可以远程访问的用户&quot;&gt;3. 新添加一个可以远程访问的用户&lt;/h3&gt;
@@ -79,8 +91,20 @@ arine:x:250:arine
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 注意, `-` 两边都有空格
 su - arine
 vncpasswd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-# 重新加载,使得服务生效
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 配置xstartup
+vi /home/arine/.vnc/xstart
+
+# 内容如下
+
+#Uncomment the following two lines for normal desktop:
+unset SESSION_MANAGER
+unset DEBUG_SESSION_BUS_ADDRESS
+exec /etc/X11/xinit/xinitrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 重新加载,使得服务生效
 systemctl daemon-reload
 systemctl enable vncserver@:1.service  # 启动时自动启动VNC服务
 netstat -tulpn | grep vnc # 检查VNC正在监听的端口
@@ -117,11 +141,39 @@ chkconfig vncserver on
 
 &lt;h3 id=&quot;10-远程桌面&quot;&gt;10. 远程桌面&lt;/h3&gt;
 
-&lt;p&gt;windows会自动选择 Xvnc协议.&lt;/p&gt;
+&lt;p&gt;windows 远程桌面连接.&lt;/p&gt;
 
 &lt;p&gt;linux: 远程桌面连接,选择 vnc协议&lt;/p&gt;
 
-&lt;h3 id=&quot;11-参考资料&quot;&gt;11. 参考资料&lt;/h3&gt;
+&lt;p&gt;登录是密码则是登录账号与密码&lt;/p&gt;
+
+&lt;h3 id=&quot;11-vnc-viewer&quot;&gt;11. VNC viewer&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;因为出现部分windows连接正常,部分不正常,mac无法使用paraellels client 登录.我们使用了VNC Viewer &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;第5步中新建的1.service ,所以我们如下图配置&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/24/5b570c27a7bb7.png&quot; alt=&quot;5b570c27a7bb7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/24/5b570cdbac990.png&quot; alt=&quot;5b570cdbac990&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;注意: 此处的密码则是第6步设置的 vncpasswd &lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;12-如果出现桌面假死非重启的修复方法如下&quot;&gt;12. 如果出现桌面假死,非重启的修复方法如下&lt;/h3&gt;
+&lt;p&gt;我们都知道 CTRL+ALT+Fn 是进入相应的第n个终端,一般centos中F1 是运行GUI. 实在不知道,按一下就知道了..
+如果桌面假死,鼠标仍在CTRL+ALT+F2 进入终端2.
+然后登陆.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 查看运行的是什么进程
+ps -t tty1 
+# 然后我们会发现有一个进程..一般就只有一个 是 X,记住它的PID
+# 切换到root
+kill 9 PID 
+# 关闭这个进程,进入登陆界面
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;13-参考资料&quot;&gt;13. 参考资料&lt;/h3&gt;
+
 &lt;ol&gt;
   &lt;li&gt;http://tigervnc.org/doc/Xvnc.html&lt;/li&gt;
   &lt;li&gt;https://blog.csdn.net/kwame211/article/details/76014361&lt;/li&gt;
@@ -639,9 +691,10 @@ IT控
         <description>&lt;h2 id=&quot;u盘安装centos7&quot;&gt;u盘安装centos7&lt;/h2&gt;
 
 &lt;h3 id=&quot;准备工具&quot;&gt;准备工具&lt;/h3&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 容量允许的优盘
 2. 下载 UltraISO;
-3. CentOS7光盘镜像; 
+3. CentOS7光盘镜像;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://mirrors.aliyun.com              阿里云镜像站
@@ -662,27 +715,38 @@ http://mirrors.163.com/                网易镜像站
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;重启需要安装的计算机&quot;&gt;重启需要安装的计算机&lt;/h2&gt;
+
 &lt;h3 id=&quot;一旦看到电脑品牌启动logo说明固件启动立刻按f2&quot;&gt;一旦看到电脑品牌启动logo,说明固件启动,立刻按f2&lt;/h3&gt;
+
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;部分台式机是delete,部分笔记本是f1&lt;/code&gt;
 设置可以 legacy 引导启动.&lt;/p&gt;
 
 &lt;h3 id=&quot;重启固件启动按-f12&quot;&gt;重启,固件启动按 f12&lt;/h3&gt;
+
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;部分台式机是 esc&lt;/code&gt;
 选择优盘启动 (从优盘品牌, u盘名等信息判断, 还有什么 xxxStorage 也可能,小概率 .)&lt;/p&gt;
 
 &lt;h3 id=&quot;进入到linux引导界面&quot;&gt;进入到linux引导界面&lt;/h3&gt;
-&lt;p&gt;按下tab 按键, 
- &lt;code class=&quot;highlighter-rouge&quot;&gt;uefi启动的话,则是按下 e (留意看一下下面一行字,有些不记得了)&lt;/code&gt;
-将语句改成:
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/07/25/5b57cd2bee3e7.png&quot; alt=&quot;5b57cd2bee3e7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;按下tab 按键,&lt;/p&gt;
+
+&lt;p&gt;将语句改成:
 &lt;code class=&quot;highlighter-rouge&quot;&gt;initrd=initrd.img inst.stage2=hd:LABEL=C7 quiet&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C7&lt;/code&gt; 是U盘名字&lt;/p&gt;
+
+&lt;h4 id=&quot;注意-uefi引导看这里&quot;&gt;注意: UEFI引导看这里&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UEFI 不是按Tab 而是按下 e , 修改完成后 (ctrl+x 确认)&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;根据引导&quot;&gt;根据引导&lt;/h3&gt;
 
 &lt;p&gt;根据引导一步步执行, 需要桌面环境的不要选择最小安装. 可以选择GNOME 或者KDE 环境&lt;/p&gt;
 
 &lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+
 &lt;ol&gt;
   &lt;li&gt;https://www.linuxidc.com/Linux/2017-11/148355.htm&lt;/li&gt;
   &lt;li&gt;https://blog.csdn.net/gsls200808/article/details/49717813&lt;/li&gt;
