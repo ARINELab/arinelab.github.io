@@ -6,8 +6,8 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="keyword"  content="{{ site.keyword }}">
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-
-    <meta http-equiv="Cache-Control" content="max-age=10800" /> <!-- 资源到期时间设为0 -->
+    <meta http-equiv="Expires" content="Mon, 20 Jul 2019 23:00:00 GMT" /> 
+    <meta http-equiv="Cache-Control" content="max-age=7200,must-revalidate" /> <!-- 资源到期时间设为0 -->
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -24,9 +24,9 @@
     <link rel="stylesheet" href="{{ "/css/mainrsss.css" | prepend: site.baseurl }}">
    
     <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">  -->
     <!-- Hux change font-awesome CDN to qiniu -->
-     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">  
+     <!-- <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">   -->
     <link rel="stylesheet" href="/layui/css/layui.css" media="all">
 
     <!-- Hux Delete, sad but pending in China
