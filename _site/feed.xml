@@ -5,9 +5,90 @@
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 26 Jul 2018 22:03:46 +0800</pubDate>
-    <lastBuildDate>Thu, 26 Jul 2018 22:03:46 +0800</lastBuildDate>
+    <pubDate>Tue, 31 Jul 2018 12:26:45 +0800</pubDate>
+    <lastBuildDate>Tue, 31 Jul 2018 12:26:45 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Giterror Record(一)</title>
+        <description>
+&lt;p&gt;---&lt;/p&gt;
+
+&lt;p&gt;title: “git 提交提示master does not match any”&lt;/p&gt;
+
+&lt;p&gt;date:  2018-07-30&lt;/p&gt;
+
+&lt;p&gt;author:  “ray”&lt;/p&gt;
+
+&lt;p&gt;tags:&lt;/p&gt;
+
+&lt;p&gt;- 技巧教程&lt;/p&gt;
+
+&lt;p&gt;- git&lt;/p&gt;
+
+&lt;p&gt;---&lt;/p&gt;
+
+&lt;h3 id=&quot;1-报错信息&quot;&gt;1. 报错信息&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-错误原因&quot;&gt;2. 错误原因&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;不详
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-解决方案&quot;&gt;3. 解决方案&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;touch README
+git add README 
+git commit -m 'first commit'
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-网路上的其他说明&quot;&gt;4. 网路上的其他说明&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;一般而言,建造repo 和本地仓库的流程如下:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、在github上创建项目
+
+2、使用git clone https://github.com/xxxxxxx/xxxxx.git克隆到本地
+
+3、编辑项目
+
+4、git add . （将改动添加到暂存区）
+
+5、git commit -m &quot;提交说明&quot;
+
+6、git push origin master 将本地更改推送到远程master分支。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;如果在github的remote上已经有了文件，会出现错误&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-参考链接&quot;&gt;5. 参考链接&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;http://www.cnblogs.com/renkangke/archive/2013/05/31/conquerAndroid.html&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;https://www.jianshu.com/p/8d26730386f3&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;https://stackoverflow.com/questions/21264738/error-src-refspec-master-does-not-match-any&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Mon, 30 Jul 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/07/30/GitError-Record(%E4%B8%80)/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/30/GitError-Record(%E4%B8%80)/</guid>
+        
+        
+      </item>
     
       <item>
         <title>CENTOS7 基于XVNC和RDP配置远程桌面可访问与用户权限</title>
