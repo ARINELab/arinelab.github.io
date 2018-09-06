@@ -18,7 +18,7 @@
                 </ul>
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    <a href="http://39.105.11.138/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
                     <br>
                     <!-- This website has been visited <span id="busuanzi_container_site_uv"></span> times. -->
                    <span id="busuanzi_container_site_uv">
@@ -100,8 +100,8 @@ $.ajax({
           		"author :"+soft_author+"</br>"+
           		"authorEmail :"+soft_authorEmail+"<br/>"+
           		"<i><a href='http://127.0.0.1:8080/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
-          		"Version :"+soft_version+
-              "<img href='"+"'http://127.0.0.1:8080/downPage/oe/>"++
+          		"Version :"+soft_version+"<br/>"+
+              "<img src='http://127.0.0.1:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
           		"</p>";
           accordion.appendChild(div_head);
           accordion.appendChild(div_content);
