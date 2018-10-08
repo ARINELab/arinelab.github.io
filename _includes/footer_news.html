@@ -1,0 +1,167 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <ul class="list-inline">
+                    {% if site.github_username %}
+                            <li>
+                                <a target="_blank" href="https://github.com/ARINELab">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    {% endif %}
+                </ul>
+                </ul>
+                <p class="copyright text-muted">
+                    <a href="https://www.nzwang-lab.net:80/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
+                    <br>
+                    <!-- This website has been visited <span id="busuanzi_container_site_uv"></span> times. -->
+                   <span id="busuanzi_container_site_uv">
+                    This website has been visited by <span id="busuanzi_value_site_uv"></span> persons.
+                </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- 网站统计 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<script src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script>
+<!--<script src="//code.jquery.com/jquery-1.9.1.js"></script>-->
+<script src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
+
+
+   
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  });
+</script>
+
+<script>
+ 
+$.ajax({
+    cache : false,
+    type : "GET",
+    url : "https://www.nzwang-lab.net:80/site/news/lists",
+    //data : $('#signupForm').serialize(),// 你的formid
+    async : false,
+    error : function(request) {
+      console.log("即将上线");
+    },
+    success : function(data) {
+      if (data.code == 0) {
+        alert(len);
+        var len = data.newsList.length;
+        var accordion = document.getElementById('accordion')
+        var count = 0;
+        for(;data.newsList[count];){
+          var nid         =  data.newsList[count].nid        ;
+          var nlogo       =  data.newsList[count].nlogo      ;
+          var ndate       =  data.newsList[count].ndate      ;
+          var created     =  data.newsList[count].created    ;
+          var modified    =  data.newsList[count].modified   ;
+          var nContent    =  data.newsList[count].nContent   ;
+          var type        =  data.newsList[count].type       ;
+          var tags        =  data.newsList[count].tags       ;
+          var categories  =  data.newsList[count].categories ;
+          var hits        =  data.newsList[count].hits       ;
+          var commentsNum =  data.newsList[count].commentsNum;
+          var allowComment=  data.newsList[count].allowCommen;
+          var allowPing   =  data.newsList[count].allowPing  ;
+          var allowFeed   =  data.newsList[count].allowFeed  ;
+          var status      =  data.newsList[count].status     ;
+          var author      =  data.newsList[count].author     ;
+          var gtm_create  =  data.newsList[count].gtm_create ;
+          var gtm_modified=  data.newsList[count].gtm_modifie;
+
+          
+          var div_li = document.createElement("li");
+            var div_i = document.createElement("i");
+            var div_content = document.createElement("div");
+              var div_h3 = document.createElement("h3");
+              var div_content2 = document.createElement("div");
+
+          div_li.className = "layui-timeline-item";
+          i.className = "layui-icon layui-timeline-axis";
+          i.innerHTML += nlogo;
+
+          div_content.className = "layui-timeline-content layui-text";
+          div_h3.className = "layui-timeline-title"
+          div_h3.setAttribute("style","font-size: 22px;");
+
+          div_content2.className = "layui-col-md20";
+
+          div_li.innerHTML += "<h3>"+soft_name+"</h3>";
+          div_h3.innerHTML += ndate;
+          div_content2.innerHTML += nContent;
+
+          // div_content.innerHTML += 
+          // 		"<p>"+
+          // 		soft_introduction+"<br/>"+
+          // 		"keywords :"+soft_keywords+"<br/>"+
+          // 		"author :"+soft_author+"</br>"+
+          // 		"authorEmail :"+soft_authorEmail+"<br/>"+
+          // 		"<i><a href='https://www.nzwang-lab.net:80/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
+          // 		"Version :"+soft_version+"<br/>"+
+          //     "<img src='https://www.nzwang-lab.net:80/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
+          // 		"</p>";
+
+            div_content.appendChild(div_h3);
+            div_content.appendChild(div_content2);
+            div_li.appendChild(div_content);
+            div_li.appendChild(div_i);
+          accordion.appendChild(div_li);
+          
+         
+          count++;
+        }
+      } else {
+        alert(data.msg)
+      }
+    }
+  });
+</script>
+
+<!-- Baidu Tongji -->
+{% if site.ba_track_id %}
+<script>
+    // dynamic User by Hux
+    var _baId = '{{ site.ba_track_id }}';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+{% endif %}
+
