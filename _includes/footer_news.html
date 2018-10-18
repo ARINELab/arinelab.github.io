@@ -58,76 +58,69 @@ $.ajax({
     cache : false,
     type : "GET",
     url : "https://www.nzwang-lab.net:80/site/news/oe/lists",
+    datatype : "json",
     //data : $('#signupForm').serialize(),// 你的formid
     async : false,
     error : function(request) {
+      
       console.log("即将上线");
     },
     success : function(data) {
+      console.log(data.code);
+      alert(data.code);
       if (data.code == 0) {
-        alert(len);
+        console.log(len);
         var len = data.newsList.length;
-        var accordion = document.getElementById('accordion')
+        var event_year = document.getElementById('event_year');
+        var event_list = document.getElementById('event_list');
+        var bol = 2000;
         var count = 0;
         for(;data.newsList[count];){
           var nid         =  data.newsList[count].nid        ;
-          var nlogo       =  data.newsList[count].nlogo      ;
-          var ndate       =  data.newsList[count].ndate      ;
-          var created     =  data.newsList[count].created    ;
-          var modified    =  data.newsList[count].modified   ;
-          var nContent    =  data.newsList[count].nContent   ;
-          var type        =  data.newsList[count].type       ;
-          var tags        =  data.newsList[count].tags       ;
-          var categories  =  data.newsList[count].categories ;
-          var hits        =  data.newsList[count].hits       ;
-          var commentsNum =  data.newsList[count].commentsNum;
-          var allowComment=  data.newsList[count].allowCommen;
-          var allowPing   =  data.newsList[count].allowPing  ;
-          var allowFeed   =  data.newsList[count].allowFeed  ;
-          var status      =  data.newsList[count].status     ;
-          var author      =  data.newsList[count].author     ;
-          var gtm_create  =  data.newsList[count].gtm_create ;
-          var gtm_modified=  data.newsList[count].gtm_modifie;
-
-          
-          var div_li = document.createElement("li");
-            var div_i = document.createElement("i");
-            var div_content = document.createElement("div");
-              var div_h3 = document.createElement("h3");
-              var div_content2 = document.createElement("div");
-
-          div_li.className = "layui-timeline-item";
-          i.className = "layui-icon layui-timeline-axis";
-          i.innerHTML += nlogo;
-
-          div_content.className = "layui-timeline-content layui-text";
-          div_h3.className = "layui-timeline-title"
-          div_h3.setAttribute("style","font-size: 22px;");
-
-          div_content2.className = "layui-col-md20";
-
-          div_li.innerHTML += "<h3>"+soft_name+"</h3>";
-          div_h3.innerHTML += ndate;
-          div_content2.innerHTML += nContent;
-
-          // div_content.innerHTML += 
-          // 		"<p>"+
-          // 		soft_introduction+"<br/>"+
-          // 		"keywords :"+soft_keywords+"<br/>"+
-          // 		"author :"+soft_author+"</br>"+
-          // 		"authorEmail :"+soft_authorEmail+"<br/>"+
-          // 		"<i><a href='https://www.nzwang-lab.net:80/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
-          // 		"Version :"+soft_version+"<br/>"+
-          //     "<img src='https://www.nzwang-lab.net:80/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
-          // 		"</p>";
-
-            div_content.appendChild(div_h3);
-            div_content.appendChild(div_content2);
-            div_li.appendChild(div_content);
-            div_li.appendChild(div_i);
-          accordion.appendChild(div_li);
-          
          
+          var nyear       =  data.newsList[count].nyear      ;
+          var nmonth       =  data.newsList[count].nmonth      ;
+//        var created     =  data.newsList[count].created    ;
+//        var modified    =  data.newsList[count].modified   ;
+          var nContent    =  data.newsList[count].nContent   ;
+//        var type        =  data.newsList[count].type       ;
+//        var tags        =  data.newsList[count].tags       ;
+//        var categories  =  data.newsList[count].categories ;
+//        var hits        =  data.newsList[count].hits       ;
+//        var commentsNum =  data.newsList[count].commentsNum;
+//        var allowComment=  data.newsList[count].allowCommen;
+//        var allowPing   =  data.newsList[count].allowPing  ;
+//        var allowFeed   =  data.newsList[count].allowFeed  ;
+//        var status      =  data.newsList[count].status     ;
+//        var author      =  data.newsList[count].author     ;
+//        var gtm_create  =  data.newsList[count].gtm_create ;
+//        var gtm_modified=  data.newsList[count].gtm_modifie;
+
+          
+          var event_year_li = document.createElement("li");
+          var event_year_label = document.createElement("label");  
+          var h3 = document.createElement("h3");
+            event_year_label.setAttribute("for",nyear);
+            event_year_label.innerText = nyear;
+        		event_year_li.innerHTML += event_year_label;    
+			event_year.appendChild(event_year_li);
+          
+          	if(nyear==bol){
+				event_list_li = document.createElement("li");
+				event_list_li.innerHTML += "<span>"+nmonth+"</span>";
+				event_list_li.innerHTML += "<p><span>"+nContent+"</span></p>";
+			}else{
+				bol = nyear;
+				h3.setAttribute("id",nyear);
+				h3.innerText = nyear;
+				event_list.appendChild(h3);
+				
+				event_list_li = document.createElement("li");
+				event_list_li.innerHTML += "<span>"+nmonth+"</span>";
+				event_list_li.innerHTML += "<p><span>"+nContent+"</span></p>";
+			}
+         
+			event_list.appendChild(event_list_li);
           count++;
         }
       } else {
@@ -136,7 +129,17 @@ $.ajax({
     }
   });
 </script>
-
+<script>
+			$(function() {
+				$('label').click(function() {
+					$('.event_year>li').removeClass('current');
+					$(this).parent('li').addClass('current');
+					var year = $(this).attr('for');
+					$('#' + year).parent().prevAll('div').slideUp(800);
+					$('#' + year).parent().slideDown(800).nextAll('div').slideDown(800);
+				});
+			});
+		</script>
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
 <script>
