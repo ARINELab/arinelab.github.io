@@ -31,15 +31,15 @@
 </footer>
 
 <!-- 网站统计 -->
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!--<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-
+<!--<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>-->
+<script async  src="https://nzwang-lab.net:80/js/site/jquery.min.js?v=1.0.0"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="https://nzwang-lab.net:80/js/site/bootstrap.min.js "/></script>
 
 <!-- async load function -->
-<script>
+<script type="text/javascript">
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),
@@ -51,13 +51,12 @@
 </script>
 <!-- <script src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script> -->
 <!--<script src="//code.jquery.com/jquery-1.9.1.js"></script>-->
-<script src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
-<script>
- 
+<script async src="https://nzwang-lab.net:80/js/site/js/jquery-ui.js"></script>
+<script type="text/javascript">
 $.ajax({
     cache : false,
     type : "GET",
-    url : "https://www.nzwang-lab.net:80/site/news/oe/lists",
+    url : "/site/news/oe/lists",
     datatype : "json",
     //data : $('#signupForm').serialize(),// 你的formid
     async : false,
@@ -129,7 +128,7 @@ $.ajax({
     }
   });
 </script>
-<script>
+<script async>
 			$(function() {
 				$('label').click(function() {
 					$('.event_year>li').removeClass('current');
@@ -142,7 +141,7 @@ $.ajax({
 		</script>
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
-<script>
+<script type="text/javascript">
     // dynamic User by Hux
     var _baId = '{{ site.ba_track_id }}';
 
