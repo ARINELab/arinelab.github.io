@@ -38,7 +38,17 @@
 <script  type="text/javascript" src="https://nzwang-lab.net:80/js/site/jquery.min.js?v=1.0.0"></script>
 <!-- Bootstrap Core JavaScript -->
 <script type="text/javascript" src="https://nzwang-lab.net:80/js/site/bootstrap.min.js "/></script>
-
+<script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+</script>
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
 <!-- async load function -->
 <script type="text/javascript">
     function async(u, c) {

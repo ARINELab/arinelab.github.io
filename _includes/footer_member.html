@@ -50,7 +50,17 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
- 
+ <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+</script>
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
 <!--<script src="//code.jquery.com/jquery-1.9.1.js"></script>-->
 <!--<script async src="https://nzwang-lab.net:80/js/site/js/jquery-ui.js"></script>-->
 
