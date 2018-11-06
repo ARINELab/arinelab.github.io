@@ -3,11 +3,11 @@
   <channel>
     <title>ARINE Lab</title>
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Oct 2018 08:55:10 +0800</pubDate>
-    <lastBuildDate>Sun, 28 Oct 2018 08:55:10 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.3</generator>
+    <link>https://www.nzwang-lab.net//</link>
+    <atom:link href="https://www.nzwang-lab.net//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 06 Nov 2018 17:11:58 +0800</pubDate>
+    <lastBuildDate>Tue, 06 Nov 2018 17:11:58 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Giterror Record(一)</title>
@@ -31,7 +31,7 @@
 &lt;h3 id=&quot;1-报错信息&quot;&gt;1. 报错信息&lt;/h3&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;error: src refspec master does not match any.
-error: failed to push some refs to 'git@github.com
+error: failed to push some refs to &#39;git@github.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;2-错误原因&quot;&gt;2. 错误原因&lt;/h3&gt;
@@ -43,7 +43,7 @@ error: failed to push some refs to 'git@github.com
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;touch README
 git add README 
-git commit -m 'first commit'
+git commit -m &#39;first commit&#39;
 git push origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -84,8 +84,8 @@ git push origin master
 
 </description>
         <pubDate>Mon, 30 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/30/GitError-Record(%E4%B8%80)/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/30/GitError-Record(%E4%B8%80)/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/30/GitError-Record(%E4%B8%80)/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/30/GitError-Record(%E4%B8%80)/</guid>
         
         
       </item>
@@ -140,7 +140,7 @@ systemctl is-enabled vncserver@.service
 
 &lt;h3 id=&quot;5-为用户单独创建一个vnc服务配置&quot;&gt;5. 为用户单独创建一个VNC服务配置&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# '1' 是 配置命名,第二个用户可以是2,以此类推
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# &#39;1&#39; 是 配置命名,第二个用户可以是2,以此类推
 cp /lib/systemd/system/vncserver@.service/etc/systemd/system/vncserver@:1.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -263,8 +263,8 @@ kill 9 PID
 
 </description>
         <pubDate>Tue, 24 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/24/REMOTE-DESTOP-CENTOS7/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/24/REMOTE-DESTOP-CENTOS7/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/24/REMOTE-DESTOP-CENTOS7/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/24/REMOTE-DESTOP-CENTOS7/</guid>
         
         <category>远程桌面</category>
         
@@ -363,8 +363,8 @@ kill 9 PID
 
 </description>
         <pubDate>Sun, 22 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/22/Aria2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/22/Aria2/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/22/Aria2/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/22/Aria2/</guid>
         
         <category>aria2</category>
         
@@ -488,9 +488,9 @@ __这些文字会生成`&amp;lt;strong&amp;gt;`__
 
 &lt;p&gt;效果如下：&lt;/p&gt;
 
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;任务一 未做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [ ]&lt;/code&gt;&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;任务二 已做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [x]&lt;/code&gt;&lt;/li&gt;
+&lt;ul&gt;
+  &lt;li&gt;[ ] 任务一 未做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [ ]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;[x] 任务二 已做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [x]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;图片&quot;&gt;图片&lt;/h2&gt;
@@ -561,7 +561,7 @@ __这些文字会生成`&amp;lt;strong&amp;gt;`__
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```js
 function fancyAlert(arg) {
   if(arg) {
-    $.facebox({div:'#foo'})
+    $.facebox({div:&#39;#foo&#39;})
   }
 
 }
@@ -573,7 +573,7 @@ function fancyAlert(arg) {
 
 &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fancyAlert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;facebox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;facebox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;#foo&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 	
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -757,8 +757,8 @@ IT控
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 20 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/20/how-to-use-markedown/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/20/how-to-use-markedown/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/20/how-to-use-markedown/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/20/how-to-use-markedown/</guid>
         
         <category>markdown</category>
         
@@ -792,7 +792,7 @@ http://mirrors.163.com/                网易镜像站
 4. 选择要写入的优盘或者硬盘. (会被格式化的,建议将其他外界存储设备暂时拔除)
 5. 写入
 6. 便捷启动---&amp;gt; syslinux(如果无法引导系统,则需要执行本步骤)
-7. (必做) 修改u盘名为 'C7' (记住you盘名,后面要用)
+7. (必做) 修改u盘名为 &#39;C7&#39; (记住you盘名,后面要用)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;重启需要安装的计算机&quot;&gt;重启需要安装的计算机&lt;/h2&gt;
@@ -836,8 +836,8 @@ http://mirrors.163.com/                网易镜像站
 
 </description>
         <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/18/centos7-install-by-Usb-flash-drive/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/18/centos7-install-by-Usb-flash-drive/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/18/centos7-install-by-Usb-flash-drive/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/18/centos7-install-by-Usb-flash-drive/</guid>
         
         <category>技巧教程</category>
         
@@ -852,12 +852,12 @@ http://mirrors.163.com/                网易镜像站
 
 &lt;hr /&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;path='/home/arine-lab/Reference/'; %原文件路径
-savepath='/home/arine-lab/list_tiff/';   %新文件路径    
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;path=&#39;/home/arine-lab/Reference/&#39;; %原文件路径
+savepath=&#39;/home/arine-lab/list_tiff/&#39;;   %新文件路径    
 
 for i=1:100   %图片层数，可通过windows图片查看器知晓  
-    I = imread([path,'NameOfTiff.tif'],i);   %读入文件的第i页
-    imwrite(I,[savepath,num2str(i,'%04d'),'.tif']);   %保存单层图片，以其在原文件中的顺序命名
+    I = imread([path,&#39;NameOfTiff.tif&#39;],i);   %读入文件的第i页
+    imwrite(I,[savepath,num2str(i,&#39;%04d&#39;),&#39;.tif&#39;]);   %保存单层图片，以其在原文件中的顺序命名
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -908,8 +908,8 @@ mkdir ../tif_list &lt;span class=&quot;c&quot;&gt;# a dir for tif_lists&lt;/span
 
 </description>
         <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/18/Tif2MRC/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/18/Tif2MRC/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/18/Tif2MRC/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/18/Tif2MRC/</guid>
         
         <category>mrc2tif</category>
         
@@ -1190,8 +1190,8 @@ Result = PASS
 
 </description>
         <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/18/Install-cuda9.0+tensorflow_gpu1.8+python2.7+-PIP-on-centos7/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/18/Install-cuda9.0+tensorflow_gpu1.8+python2.7+-PIP-on-centos7/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/18/Install-cuda9.0+tensorflow_gpu1.8+python2.7+-PIP-on-centos7/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/18/Install-cuda9.0+tensorflow_gpu1.8+python2.7+-PIP-on-centos7/</guid>
         
         <category>tensourflow_gpu</category>
         
@@ -1445,8 +1445,8 @@ mount /dev/sdb1 /mnt/windows/c
 
 </description>
         <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/18/Centos7-mounts-exfat-and-NTFS-file-systems/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/18/Centos7-mounts-exfat-and-NTFS-file-systems/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/18/Centos7-mounts-exfat-and-NTFS-file-systems/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/18/Centos7-mounts-exfat-and-NTFS-file-systems/</guid>
         
         <category>技巧教程</category>
         
@@ -1531,8 +1531,8 @@ mount /dev/sdb1 /mnt/windows/c
 
 </description>
         <pubDate>Wed, 18 Jul 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/07/18/CentOS7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85-matlab-2014b/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/18/CentOS7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85-matlab-2014b/</guid>
+        <link>https://www.nzwang-lab.net//2018/07/18/CentOS7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85-matlab-2014b/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/07/18/CentOS7-%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85-matlab-2014b/</guid>
         
         <category>matlab</category>
         
@@ -1602,8 +1602,8 @@ http://www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，�
 
 </description>
         <pubDate>Sat, 09 Jun 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/06/09/windows-install/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/09/windows-install/</guid>
+        <link>https://www.nzwang-lab.net//2018/06/09/windows-install/</link>
+        <guid isPermaLink="true">https://www.nzwang-lab.net//2018/06/09/windows-install/</guid>
         
         <category>技巧教程</category>
         

@@ -33,12 +33,8 @@
 <!-- 网站统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- jQuery -->
-<!--<script async  src="https://nzwang-lab.net:80/js/site/jquery.min.js?v=1.0.0"></script>-->
-<!--<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>-->
-<!-- Bootstrap Core JavaScript -->
-<!--<script type="text/javascript" src="https://nzwang-lab.net:80/js/site/bootstrap.min.js "/>-->
-<script src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script> 
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "//nzwang-lab.net:80/js/site/jquery.min.js?v=1.0.0 " | prepend: "" }}"></script>
+<script src="{{ "//nzwang-lab.net:80/js/site/jquery-1.9.1.js" | prepend: ""}}"></script>
 <!-- async load function -->
 <script type="text/javascript"> 
     function async(u, c) {
@@ -50,7 +46,7 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
- <script>
+ <!--<script>
         async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
             hljs.initHighlightingOnLoad();
         })
@@ -60,126 +56,107 @@
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
-</script>
-<!--<script src="//code.jquery.com/jquery-1.9.1.js"></script>-->
-<!--<script async src="https://nzwang-lab.net:80/js/site/js/jquery-ui.js"></script>-->
+</script>-->
 
-
-   
-<!-- <script>
-  $(function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
-  });
-</script> -->
-
-<!-- <script>
- 
-$.ajax({
-    cache : false,
-    type : "GET",
-    url : "https://www.nzwang-lab.net:80/site/members/oe/lists",
-    data : $('#signupForm').serialize(),// 你的formid
-    async : true,
-    error : function(request) {
-      console.log("即将上线");
+<script type="text/javascript">
+	$.ajax({
+    cache: false,
+    type: "GET",
+    url: "//nzwang-lab.net:80/site/members/oe/lists",
+    datatype: "jsonp",
+    jsonp:"callback",
+    timeout: 30000,
+    error: function (err) {
+       console.log(err.msg);
     },
-    success : function(data) {
-      if (data.code == 0) {
-        alert(len);
-        var len = data.memberList.length;
-        var teacher = document.getElementById('teacher');
-        var student = document.getElementById('student')
-        var count = 0;
-        for(;data.newsList[count];){
-
-        var  mid           =  data.memberList[count].mid            ;   
-        var  mPic          =  data.memberList[count].mpic           ;
-        var  mname         =  data.memberList[count].mname          ;         
-        var  mnameEng      =  data.memberList[count].mnameEng       ;        
-        var  created       =  data.memberList[count].created        ;         
-        var  modified      =  data.memberList[count].modified       ;        
-        var  mjob          =  data.memberList[count].mjob           ;        
-        var  mintroduce =  data.memberList[count].mintroduce        ;    
-        var  mintroduceEng =  data.memberList[count].mintroduceEng  ;         
-        var  mResearea     =  data.memberList[count].mResearea      ;         
-        var  mReseareaEng  =  data.memberList[count].mReseareaEng   ;        
-        var  gtm_create    =  data.memberList[count].gtm_create     ;         
-        var  gtm_modified  =  data.memberList[count].gtm_modified   ;        
-
-          var div = document.createElement("div");
-          
-
-          if(mjob==teacher){
-            div.innerHTML += " <div>"+
-            "<img src='"+mPic+"'></div>"+
-            "<div class='s-item-text-group s-mh'>"+
-            "<div class='s-item-title'>"+
-            "<div class='s-component s-text'>"+
-              "<h3 align='center' class='s-component-content s-font-heading'><p>"+mname+"/"+mnameEng+"</p></h3></div>"+"</div></div>"+
-              mintroduceEng+"<br/><br/><br/>"+
-              "<div class='s-item-text'>"+
-                "<div class='s-component s-text'>"+
-                "<div class='s-component-content s-font-body'>"+
-                "<span style='font-size:16pt'>Research Area : </span>"+
-                mintroduceEng+"</div></div></div>";
-
-                teacher.appendChild(div);
-
-          }else if(mjob==student){
-            div.className = 's-block-item s-repeatable-item s-block-sortable-item s-block-largeProfile  block-component-item';
-        
-            div.setAttribute('align','center');
-            div.innerHTML += 
-            "<div class='s-block-item-inner clearfix' style='position: relative;'>"+
-            "<div class='  columns third no-float'>"+
-            "<div class='s-block-profile'>"+
-             " <div class='s-item-media-group s-mhi' style=''>"+
-              "  <div class='s-component s-media '>"+
-              "      <div class='s-component-content'>"+
-               "         <div class='s-ratio-box' style='max-width: 260px; max-height: 360px;'>"+
-                "          <div class='s-ratio-fill' style='padding-bottom: 130%;'></div>"+
-                 "         <div><img alt='' title='' class='crop-default lazyloaded' data-description='' width='320' height='320' src='"+mPic+"'>"+
-                  "        </div>"+
-                        "</div>"+
-                      "</div>"+
-                "</div>"+
-              "</div>"+
-              "<div class='s-item-text-group s-mh'>"+
-               " <div class='s-item-title'>"+
-                "  <div class='s-component s-text'>"+
-                 "   <h3 class='s-component-content s-font-heading'><p>"+mname+"/"+mnameEng+"</p></h3></div>"+
-                "</div>"+
-                "<div class='s-item-subtitle'>"+
-                 " <div class='s-component s-text'>"
-                  "  <h6 class='s-component-content s-font-body'><p>"+
-                  mintroduce+"</p></h6></div>"+
-               " </div>"+
-                "<div class='s-item-text'>"+
-                 " <div class='s-component s-text'>"+
-                  "  <div class='s-component-content s-font-body'>"+
-                   "   <p>研究方向："+mResearea+"</p>"+
-                    "  <p>Research Area："+mReseareaEng+"</p>"+
-                    "</div>"+
-                  "</div>"+
-                "</div>"+
-              "</div>"+
-            "</div>"+
-          "</div>"+
-        "</div>"+
-      "</div>";
-        student.appendChild(div);
-          }          
-          count++;
+    success: function (data) {
+        if (data.code == 0) {
+        	var url_post = "//nzwang-lab.net:80/files/";
+            //var count = data.memberList.length;
+			 var len = data.memberList.length;
+			 console.log(len);
+			var event_year = document.getElementById('event_year');
+            var event_list = document.getElementById('event_list');
+            
+            var currentMembers = document.getElementById("0");
+            var collaborators = document.getElementById("1");
+            var former = document.getElementById("2");
+            
+            var teacher = document.getElementById("teacher");
+            var student = document.getElementById("student");
+            var Collaborators = document.getElementById("Collaborators");
+            var Former = document.getElementById("Former");
+            
+            var event_li = document.createElement("li");
+            var count = 0;
+            for (; data.memberList[count];) {
+                // 获取传来的数据并提出
+                //var mid = data.memberList[count].mid;
+                var mname = data.memberList[count].mname;
+                var mnameEng = data.memberList[count].mnameEng;
+                var pic = data.memberList[count].pic;
+                var mjob = data.memberList[count].mjob;
+                var mintroduce = data.memberList[count].mintroduce;
+                var mintroduceEng = data.memberList[count].mintroduceEng;
+                var mResearea = data.memberList[count].mResearea;
+                var mReseareaEng = data.memberList[count].mReseareaEng;
+               //alert(mname);
+                event_li = document.createElement("li");
+                event_img = document.createElement("img");
+                event_h3 = document.createElement("h3");
+                event_pintro = document.createElement("p");
+                event_span = document.createElement("span");
+                event_parea = document.createElement("p");
+                
+                event_img.setAttribute("src",url_post+pic);
+                event_h3.innerText = mname+"/"+mnameEng;
+                console.log(mname);
+               	if(mjob=="teacher"){
+                	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
+                	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";
+                	event_li.innerHTML+= "<p>"+mintroduceEng+"</p>"
+                	event_li.innerHTML+= "<span>Research Area：</span>"
+                	event_li.innerHTML+= "<p>"+mReseareaEng+"</p>"
+                	teacher.appendChild(event_li);
+               	}else if(mjob=="student"){                	
+                	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
+                	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";
+                	event_li.innerHTML+= "<p>"+mintroduce+"</p>"
+                	event_li.innerHTML+= "<span>研究方向/Research Area：</span>"
+                	event_li.innerHTML+= "<p>"+ mResearea+"/"+mReseareaEng+"</p>"
+                	student.appendChild(event_li);
+               	}else if(mjob=="Collaborators"){
+               		event_pintro.innerText = mintroduce;
+                	event_span.innerText = "研究方向：";
+                	event_parea.innerText = mResearea;
+                	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
+                	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";
+                	event_li.innerHTML+= "<p>"+mintroduce+"</p>"
+                	event_li.innerHTML+= "<span>研究方向：</span>"
+                	event_li.innerHTML+= "<p>"+ mResearea+"</p>"
+                	collaborators.appendChild(event_li);
+               	}else if(mjob=="Former"){
+               		;
+               	}
+                count++;
+            }
+        } else {
+            alert(data.msg)
         }
-      } else {
-        alert(data.msg)
-      }
     }
-  });
-</script> -->
-
+});
+</script>
+<script type="text/javascript">
+$(function(){
+	$('label').click(function(){
+		$('.event_year>li').removeClass('current');
+		$(this).parent('li').addClass('current');
+		var year = $(this).attr('for');
+		$('#'+year).parent().prevAll('div').slideUp(800);
+		$('#'+year).parent().slideDown(800).nextAll('div').slideDown(800);
+	});
+});
+</script>
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
 <script>
