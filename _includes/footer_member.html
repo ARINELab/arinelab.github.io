@@ -18,7 +18,7 @@
                 </ul>
                 </ul>
                 <p class="copyright text-muted">
-                    <a href="https://www.nzwang-lab.net:80/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
+                    <a href="https://www.nzwang-lab.net:8080/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
                     <br>
                     <!-- This website has been visited <span id="busuanzi_container_site_uv"></span> times. -->
                    <span id="busuanzi_container_site_uv">
@@ -33,8 +33,8 @@
 <!-- 网站统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- jQuery -->
-<script src="{{ "//nzwang-lab.net:80/js/site/jquery.min.js?v=1.0.0 " | prepend: "" }}"></script>
-<script src="{{ "//nzwang-lab.net:80/js/site/jquery-1.9.1.js" | prepend: "" }}"></script>
+<script src="{{ "//nzwang-lab.net:8080/js/site/jquery.min.js?v=1.0.0 " | prepend: "" }}"></script>
+<script src="{{ "//nzwang-lab.net:8080/js/site/jquery-1.9.1.js" | prepend: "" }}"></script>
 <!-- async load function -->
 <script type="text/javascript"> 
     function async(u, c) {
@@ -62,7 +62,7 @@
 	$.ajax({
     cache: false,
     type: "GET",
-    url: "//nzwang-lab.net:80/site/members/oe/lists",
+    url: "//nzwang-lab.net:8080/site/members/oe/lists",
     datatype: "jsonp",
     jsonp:"callback",
     timeout: 30000,
@@ -71,7 +71,7 @@
     },
     success: function (data) {
         if (data.code == 0) {
-        	var url_post = "//nzwang-lab.net:80/files/";
+        	var url_post = "//nzwang-lab.net:8080/files/";
             //var count = data.memberList.length;
 			 var len = data.memberList.length;
 			 console.log(len);
