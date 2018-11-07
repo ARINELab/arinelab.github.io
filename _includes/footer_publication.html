@@ -33,8 +33,11 @@
 <!-- 网站统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- jQuery -->
-<script src="{{ "//nzwang-lab.net:8080/js/site/jquery.min.js?v=1.0.0 " | prepend: "" }}"></script>
-<script src="{{ "//nzwang-lab.net:8080/js/site/jquery-1.9.1.js" | prepend: "" }}"></script>
+<!-- <script src="{{ "//nzwang-lab.net:8080/js/site/jquery.min.js?v=1.0.0 " | prepend: "" }}"></script>
+<script src="{{ "//nzwang-lab.net:8080/js/site/jquery-1.9.1.js" | prepend: "" }}"></script> -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script>
+
 <!-- async load function -->
 <script type="text/javascript"> 
     function async(u, c) {
