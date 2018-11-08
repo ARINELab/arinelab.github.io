@@ -77,19 +77,23 @@
         if (data.code == 0) {
         	
             //var count = data.memberList.length;
-			 var len = data.publicationList.length;
+			var len = data.publicationList.length;
 			 console.log(len);
             
             var ele_Thesis = document.getElementById('Thesis');
             var ele_Journal = document.getElementById('Journal');
             var ele_Conference = document.getElementById('Conference');
             var ele_Patents = document.getElementById('Patents');
+            var ele_Software = document.getElementById('Software');
+            var ele_Awards = document.getElementById('Awards');
             
             var count = 0;
             var Thesis = 0;
             var Journal = 0;
             var Conference = 0;
             var Patents = 0;
+            var Software =0 ;
+            var Awards = 0;
             for (; data.publicationList[count];) {
                 // 获取传来的数据并提出
                 //var mid = data.memberList[count].mid;
@@ -114,6 +118,14 @@
                		Patents++;
                 	event_publications.innerHTML = Patents+". "+ppublications;
                 	ele_Patents.appendChild(event_publications);
+               	}else if(pcategories==4){
+               		Software++;
+                	event_publications.innerHTML = Software+". "+ppublications;
+                	ele_Software.appendChild(event_publications);
+               	}else if(pcategories==5){
+               		Awards++;
+                	event_publications.innerHTML = Awards+". "+ppublications;
+                	ele_Awards.appendChild(event_publications);
                	}
                 count++;
             }
