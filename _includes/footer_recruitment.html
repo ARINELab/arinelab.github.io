@@ -71,7 +71,7 @@
   });
 </script>
 
- <script>
+ <!--<script>
  
 $.ajax({
     cache : false,
@@ -84,8 +84,8 @@ $.ajax({
     },
     success : function(data) {
       if (data.code == 0) {
-        var len = data.softlist.length;
-        var accordion = document.getElementById('accordion')
+        var len = data.recruitmentlist.length;
+        var accordion = document.getElementById('recruitment')
         var count = 0;
         for(;data.softlist[count];){
           var soft_name = data.softlist[count].soft_name;
@@ -120,7 +120,7 @@ $.ajax({
       }
     }
   });
-</script> 
+</script> -->
 
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
