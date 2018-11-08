@@ -18,7 +18,7 @@
                 </ul>
                 </ul>
                 <p class="copyright text-muted">
-                    <a href="http://www.nzwang-lab.net:8080/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
+                    <a href="//47.98.153.72:8080/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
                     <br>
                     <!-- This website has been visited <span id="busuanzi_container_site_uv"></span> times. -->
                    <span id="busuanzi_container_site_uv">
@@ -62,7 +62,7 @@
 </script>
 
    
-<script>
+<script async>
   $(function() {
     $( "#accordion" ).accordion({
       collapsible: true
@@ -75,7 +75,7 @@
 $.ajax({
     cache : false,
     type : "GET",
-    url : "http://www.nzwang-lab.net:8080/downPage/oe/show",
+    url : "//47.98.153.72:8080/downPage/oe/show",
     //data : $('#signupForm').serialize(),// 你的formid
     // async : true,
     error : function(request) {
@@ -106,9 +106,9 @@ $.ajax({
           		"keywords :"+soft_keywords+"<br/>"+
           		"author :"+soft_author+"</br>"+
           		"authorEmail :"+soft_authorEmail+"<br/>"+
-          		"<i><a href='//nzwang-lab.net:8080/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
+          		"<i><a href='//47.98.153.72:8080/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
           		"Version :"+soft_version+"<br/>"+
-              "<img src='//nzwang-lab.net:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
+              "<img src='//47.98.153.72:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
           		"</p>";
           accordion.appendChild(div_head);
           accordion.appendChild(div_content);
