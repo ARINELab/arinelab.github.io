@@ -33,11 +33,11 @@
 <!-- 网站统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 <script>
         ("//cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
             hljs.initHighlightingOnLoad();
@@ -77,7 +77,7 @@ $.ajax({
     type : "GET",
     url : "http://www.nzwang-lab.net:8080/downPage/oe/show",
     //data : $('#signupForm').serialize(),// 你的formid
-    async : true,
+    // async : true,
     error : function(request) {
       console.log("即将上线");
     },
