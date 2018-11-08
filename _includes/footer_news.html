@@ -152,7 +152,7 @@ $(function(){
 		$(this).parent('li').addClass('current');
 		var year = $(this).attr('for');
 		$('#'+year).parent().prevAll('div').slideUp(800);
-		$('#'+year).parent().slideDown(800).nextAll('div').slideDown(800);
+		$('#'+year).parent().slideDown(800).nextAll('div').slideUp(800);
 	});
 });
 </script>
