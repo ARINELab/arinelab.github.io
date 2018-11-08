@@ -33,11 +33,11 @@
 <!-- 网站统计 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- jQuery -->
-<script async src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-<script async src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script>
-<script async src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
+<script  src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script  src="{{ "/js/jquery-1.9.1.js " | prepend: site.baseurl }}"></script>
+<script  src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
 <!-- Bootstrap Core JavaScript -->
-<script async src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script  src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 <script>
         ("//cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
             hljs.initHighlightingOnLoad();
@@ -106,9 +106,9 @@ $.ajax({
           		"keywords :"+soft_keywords+"<br/>"+
           		"author :"+soft_author+"</br>"+
           		"authorEmail :"+soft_authorEmail+"<br/>"+
-          		"<i><a href='http://www.nzwang-lab.net:8080/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
+          		"<i><a href='//nzwang-lab.net:8080/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
           		"Version :"+soft_version+"<br/>"+
-              "<img src='http://www.nzwang-lab.net:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
+              "<img src='//nzwang-lab.net:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
           		"</p>";
           accordion.appendChild(div_head);
           accordion.appendChild(div_content);
