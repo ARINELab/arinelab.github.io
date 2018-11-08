@@ -44,7 +44,7 @@
 <!-- <script  type="text/javascript"  src="http://nzwang-lab.net:8080/js/site/jquery-1.9.1.js"></script> -->
 <!--<script src="{{ "//nzwang-lab.net:8080/js/site/jquery-ui.js" | prepend: "" }}"></script>-->
 <!-- <script  type="text/javascript" src="http://nzwang-lab.net:8080/js/site/jquery-ui.js"></script> -->
-<!--<script>
+<script>
     async ("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () {
         hljs.initHighlightingOnLoad();
     })
@@ -54,7 +54,7 @@
         var $nav = document.querySelector("nav");
         if ($nav) FastClick.attach($nav);
     })
-</script>-->
+</script>
 <!-- async load function -->
 <script type="text/javascript">
     function async (u, c) {
@@ -145,7 +145,7 @@
 
 	
 </script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(function(){
 	$('label').click(function(){
 		$('.event_year>li').removeClass('current');
@@ -155,7 +155,7 @@ $(function(){
 		$('#'+year).parent().slideDown(800).nextAll('div').slideDown(800);
 	});
 });
-</script>
+</script>-->
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
 <script type="text/javascript">
