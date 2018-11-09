@@ -18,7 +18,7 @@
                 </ul>
                 </ul>
                 <p class="copyright text-muted">
-                    <a href="http://www.nzwang-lab.net:8080/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
+                    <a href="https://www.nzwang-lab.net:80/index">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</a>
                     <br>
                     <!-- This website has been visited <span id="busuanzi_container_site_uv"></span> times. -->
                    <span id="busuanzi_container_site_uv">
@@ -37,7 +37,7 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
-<script>
+<!--<script>
         async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
             hljs.initHighlightingOnLoad();
         })
@@ -47,7 +47,7 @@
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
-</script>
+</script>-->
 <!-- async load function -->
 <script>
     function async(u, c) {
@@ -65,18 +65,18 @@
    
 <script>
   $(function() {
-    $( "#recruitment" ).accordion({
+    $( "#accordion" ).accordion({
       collapsible: true
     });
   });
 </script>
 
- <!--<script>
+<script>
  
 $.ajax({
     cache : false,
     type : "GET",
-    url : "//47.98.153.72:8080/site/recruitment/list",
+    url : "//47.98.153.72:8080/site/recruitment/oe/lists",
     //data : $('#signupForm').serialize(),// 你的formid
     async : false,
     error : function(request) {
@@ -84,31 +84,31 @@ $.ajax({
     },
     success : function(data) {
       if (data.code == 0) {
-        var len = data.recruitmentlist.length;
-        var accordion = document.getElementById('recruitment')
+        var len = data.recruitmentList.length;
+        var accordion = document.getElementById('accordion')
         var count = 0;
-        for(;data.softlist[count];){
-          var soft_name = data.softlist[count].soft_name;
-          var soft_introduction =  data.softlist[count].soft_introduction;
-          var soft_fid = data.softlist[count].soft_fid;
-          var soft_keywords = data.softlist[count].soft_keywords;
-          var soft_function = data.softlist[count].soft_function;
-          var soft_author = data.softlist[count].soft_author;
-          var soft_authorEmail = data.softlist[count].soft_authorEmail;
-          var soft_version = data.softlist[count].soft_version;
+        for(;data.recruitmentList[count];){
+          var rType = data.recruitmentList[count].rType;
+          var rEndtime =  data.recruitmentList[count].rEndtime;
+          var rLinkman = data.recruitmentList[count].rLinkman;
+          var rLinkemail = data.recruitmentList[count].rLinkemail;
+          var rLinkaddress = data.recruitmentList[count].rLinkaddress;
+          var rintroduce = data.recruitmentList[count].rintroduce;
+          var rResearea = data.recruitmentList[count].rResearea;
+          var requirment = data.recruitmentList[count].requirment;
+          var rComment = data.recruitmentList[count].rComment;
           
           var div_head = document.createElement("div");
           var div_content = document.createElement("div");
           
-          div_head.innerHTML += "<h3>"+soft_name+"</h3>";
+          div_head.innerHTML += "<h3>"+rType+"（注："+rEndtime+"）</h3>";
           div_content.innerHTML += 
           		"<p>"+
-          		soft_introduction+"<br/>"+
-          		"keywords :"+soft_keywords+"<br/>"+
-          		"author :"+soft_author+"</br>"+
-          		"authorEmail :"+soft_authorEmail+"<br/>"+
-          		"Version :"+soft_version+"<br/>"+
-//            "<img src='//47.98.153.72:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
+          		rintroduce+"<br/>"+
+          		"研究方向/Research Area： "+rResearea+"<br/>"+
+          		"招聘要求/Requirment :"+requirment+"</br>"+"<br/>"+
+          		rComment+"<br/>"+
+          		"<span>联系人 :"+rLinkman+",</span>"+"<span>联系方式："+rLinkemail+"</span>"+",<span>"+rLinkaddress+"</span>"+
           		"</p>";
           accordion.appendChild(div_head);
           accordion.appendChild(div_content);
@@ -120,7 +120,7 @@ $.ajax({
       }
     }
   });
-</script> -->
+</script> 
 
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
