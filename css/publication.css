@@ -43,7 +43,18 @@ img{-ms-interpolation-mode:bicubic;}
 .link li.active a{color:#0066FF  }
 .link li:hover{border-bottom:2px solid #0066ff;color:#0066FF  }
 .link li a:hover{color:#0066FF  }.box{width:940px;margin:18px auto 0 auto;}
-.event_year{width:150px;border-bottom:2px solid #DDD;text-align:center;float:left;margin-top:10px;margin-left: -80px;}
+
+.box{width:960px;margin:0 auto 0 auto; }
+.event_year{width:140px;border-bottom:2px solid #DDD;text-align:center;float:center;margin-top:10px;}
+.event_year li{height:40px;width:150px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:14px;color:#828282;cursor:pointer;}
+.event_year li.current{width:150px;background:#B7DDEF ;color:#FFF;text-align:center;float:center;}
+.event_list{width:720px;float:right; margin:-230px 0 30px 0;pointer-events: none;}
+.event_list h3{align-items:auto;font-size:24px;font-family:Georgia;color:#B7DDEF;padding-left:25px;height:38px;line-height:30px;font-style:italic; pointer-events: none;}
+.event_list img{margin:0 0 0 50px; width: 190px;height: 202px; pointer-events: none;}
+.event_list li span{width:280px;text-align:left;display:block;float:left;margin:10px 0 6px 8px;font-size: 20px; pointer-events: none;}
+.event_list li p{width:800px;margin-left:24px;text-align: left;display:inline-block;padding-left:10px;font-size: 16px;line-height:25px;_float:left;margin:0; pointer-events: none;}
+.event_list li p span{width:550px;text-align:left;border-bottom:2px solid #DDD;padding:10px 15px;background:#FFF;margin:0;}
+/*.event_year{width:150px;border-bottom:2px solid #DDD;text-align:center;float:left;margin-top:10px;margin-left: -80px;}
 .event_year li{height:40px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:14px;color:#828282;cursor:pointer;}
 .event_year li.current{width:151px;background:#B7DDEF ;color:#FFF;text-align:left;padding-left:20px;}
 .event_list{width:800px;float:right; margin:10px 0 30px 0;}
@@ -51,4 +62,4 @@ img{-ms-interpolation-mode:bicubic;}
 .event_list img{margin:0 0 0 50px; width: 190px;height: 236px;}
 .event_list li span{width:280px;text-align:left;display:block;float:left;margin:10px 0 6px 8px;font-size: 20px;}
 .event_list li p{width:800px;margin-left:24px;text-align: left;display:inline-block;padding-left:10px;font-size: 16px;line-height:25px;_float:left;margin:0;}
-.event_list li p span{width:550px;text-align:left;border-bottom:2px solid #DDD;padding:10px 15px;background:#FFF;margin:0;}
+.event_list li p span{width:550px;text-align:left;border-bottom:2px solid #DDD;padding:10px 15px;background:#FFF;margin:0;}*/
