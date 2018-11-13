@@ -68,14 +68,14 @@
     jsonp:"callback",
     timeout: 30000,
     error: function (err) {
-       console.log(err.msg);
+       alert(err.msg);
     },
     success: function (data) {
         if (data.code == 0) {
         	var url_post = "//47.98.153.72:8080/files/";
             //var count = data.memberList.length;
 			 var len = data.memberList.length;
-			 console.log(len);
+//			 console.log(len);
 			var event_year = document.getElementById('event_year');
             var event_list = document.getElementById('event_list');
             
@@ -111,7 +111,7 @@
                 
                 event_img.setAttribute("src",url_post+pic);
                 event_h3.innerText = mname+"/"+mnameEng;
-                console.log(mname);
+//              console.log(mname);
                	if(mjob=="teacher"){
                 	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
                 	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";

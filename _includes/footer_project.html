@@ -67,14 +67,14 @@
     jsonp:"callback",
     timeout: 30000,
     error: function (err) {
-       console.log(err.msg);
+       alert(err.msg);
     },
     success: function (data) {
         if (data.code == 0) {
         	
             //var count = data.memberList.length;
 			 var len = data.projectList.length;
-			 console.log(len);
+//			 console.log(len);
             
             var event_list = document.getElementById("event_list");
             

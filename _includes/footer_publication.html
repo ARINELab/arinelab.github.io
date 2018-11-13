@@ -71,15 +71,14 @@
     jsonp:"callback",
     timeout: 30000,
     error: function (err) {
-       console.log(err.msg);
+       alert(err.msg);
     },
     success: function (data) {
         if (data.code == 0) {
         	
             //var count = data.memberList.length;
 			var len = data.publicationList.length;
-			 console.log(len);
-            
+		            
             var ele_Thesis = document.getElementById('Thesis');
             var ele_Journal = document.getElementById('Journal');
             var ele_Conference = document.getElementById('Conference');

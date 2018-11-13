@@ -88,12 +88,12 @@
     //data : $('#signupForm').serialize(),// 你的formid
 //  async: false,
     error: function (err) {
-       console.log(err.msg);
+       alert(err.msg);
     },
     success: function (data) {
         //alert(data.code);
         if (data.code == 0) {
-            console.log(len);
+//          console.log(len);
             var len = data.newsList.length;
             var event_year = document.getElementById('event_year');
             var event_list = document.getElementById('event_list');
