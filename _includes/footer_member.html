@@ -97,6 +97,7 @@
                 var mnameEng = data.memberList[count].mnameEng;
                 var pic = data.memberList[count].pic;
                 var mjob = data.memberList[count].mjob;
+                var mcategory = data.memberList[count].mcategory;
                 var mintroduce = data.memberList[count].mintroduce;
                 var mintroduceEng = data.memberList[count].mintroduceEng;
                 var mResearea = data.memberList[count].mResearea;
@@ -112,14 +113,14 @@
                 event_img.setAttribute("src",url_post+pic);
                 event_h3.innerText = mname+"/"+mnameEng;
 //              console.log(mname);
-               	if(mjob=="teacher"){
+               	if(mcategory=="teacher"){
                 	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
                 	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";
                 	event_li.innerHTML+= "<p>"+mintroduceEng+"</p>"
                 	event_li.innerHTML+= "<span>Research Area：</span>"
                 	event_li.innerHTML+= "<p>"+mReseareaEng+"</p>"
                 	teacher.appendChild(event_li);
-               	}else if(mjob=="student"){                	
+               	}else if(mcategory=="student"){                	
                 	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
                 	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";
                 	event_li.innerHTML+= "<p>"+mintroduce+"</p>";
@@ -127,14 +128,14 @@
                 	//event_li.innerHTML+= "<p>"+ mResearea+"/"+mReseareaEng+"</p>"
 //              	event_li.innerHTML+= "<p>"+ mResearea+"</p>";
                 	student.appendChild(event_li);
-               	}else if(mjob=="Collaborators"){
+               	}else if(mcategory=="Collaborators"){
                 	event_li.innerHTML+= "<img src='"+url_post+pic+"'></img>";
                 	event_li.innerHTML+= "<h3>"+mname+"/"+mnameEng+"</h3>";
                 	event_li.innerHTML+= "<p>"+mintroduce+"</p>"
                 	event_li.innerHTML+= "<span>研究方向：</span>"
                 	event_li.innerHTML+= "<p>"+ mResearea+"</p>"
                 	Collaborators.appendChild(event_li);
-               	}else if(mjob=="Former"){
+               	}else if(mcategory=="Former"){
                		;
                	}
                 count++;
