@@ -88,29 +88,47 @@ $.ajax({
         var accordion = document.getElementById('accordion')
         var count = 0;
         for(;data.softlist[count];){
-          var soft_name = data.softlist[count].soft_name;
-          var soft_introduction =  data.softlist[count].soft_introduction;
-          var soft_fid = data.softlist[count].soft_fid;
-          var soft_keywords = data.softlist[count].soft_keywords;
-          var soft_function = data.softlist[count].soft_function;
-          var soft_author = data.softlist[count].soft_author;
-          var soft_authorEmail = data.softlist[count].soft_authorEmail;
-          var soft_version = data.softlist[count].soft_version;
+          var soft_name = data.softlist[count].softName;
+          var soft_introduction =  data.softlist[count].softIntroduction;
+          var soft_fid = data.softlist[count].softFid;
+          var soft_keywords = data.softlist[count].softKeywords;
+          var soft_function = data.softlist[count].softFunction;
+          var soft_author = data.softlist[count].softAuthor;
+          var soft_authorEmail = data.softlist[count].softAuthorEmail;
+          var soft_version = data.softlist[count].softVersion;
+          var soft_createDate = data.softlist[count].softCreateDate;
+          var soft_comment = data.softlist[count].softComment;
+          var softType = data.softlist[count].softType;
           
           var div_head = document.createElement("div");
           var div_content = document.createElement("div");
           
           div_head.innerHTML += "<h3>"+soft_name+"</h3>";
-          div_content.innerHTML += 
+          if(softType=="software_file"){
+            div_content.innerHTML += 
           		"<p>"+
           		soft_introduction+"<br/>"+
           		"keywords :"+soft_keywords+"<br/>"+
+                  "function :" + soft_function + "<br/>"+
           		"author :"+soft_author+"</br>"+
           		"authorEmail :"+soft_authorEmail+"<br/>"+
           		"<i><a style='color:blue' href='//47.98.153.72:8080/downPage/oe/dynamicBE?fid="+soft_fid+"'>点此去下载页</a></i>"+"<br/>"+
           		"Version :"+soft_version+"<br/>"+
 //            "<img src='//47.98.153.72:8080/downPage/oe/"+soft_fid+"' width='140px' height='140px'>"
           		"</p>";
+          }else if(softType=="software_url"){
+            div_content.innerHTML += 
+          		"<p>"+
+          		soft_introduction+"<br/>"+
+          		"keywords :"+soft_keywords+"<br/>"+
+                "function :" + soft_function + "<br/>"+
+                "注 :"+soft_comment+"<br/>"+
+          		"author :"+soft_author+"</br>"+
+          		"authorEmail :"+soft_authorEmail+"<br/>"+
+          		"<br/>"+
+          		"Version :"+soft_version+"<br/>"+
+          		"</p>";
+          }
           accordion.appendChild(div_head);
           accordion.appendChild(div_content);
          
