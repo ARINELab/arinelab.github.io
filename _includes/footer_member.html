@@ -62,7 +62,7 @@
 	$.ajax({
     cache: true,
     type: "GET",
-    url: "//47.98.153.72:8080/site/members/oe/lists",
+    url: "//www.nzwang-lab.net:8080/site/members/oe/lists",
 //  async : true,
     datatype: "jsonp",
     jsonp:"callback",
@@ -72,7 +72,7 @@
     },
     success: function (data) {
         if (data.code == 0) {
-        	var url_post = "//47.98.153.72:8080/files/";
+        	var url_post = "//www.nzwang-lab.net:8080/files/";
             //var count = data.memberList.length;
 			 var len = data.memberList.length;
 //			 console.log(len);
