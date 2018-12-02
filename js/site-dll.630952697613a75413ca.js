@@ -1207,7 +1207,7 @@ te(r)}catch(t){}return zi[e]}function te(t,e){var n
 if(t){n=u(e)?re(t):ee(t,e)
 n?Di=n:"undefined"!=typeof console&&console.warn&&console.warn("Locale "+t+" not found. Did you forget to load it?")}return Di._abbr}function ee(t,e){if(null!==e){var n,r=Ri
 e.abbr=t
-if(null!=zi[t]){E("defineLocaleOverride","use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info.")
+if(null!=zi[t]){E("defineLocaleOverride","use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See //momentjs.com/guides/#/warnings/define-locale/ for more info.")
 r=zi[t]._config}else if(null!=e.parentLocale)if(null!=zi[e.parentLocale])r=zi[e.parentLocale]._config
 else{n=Xt(e.parentLocale)
 if(null==n){Ni[e.parentLocale]||(Ni[e.parentLocale]=[])
@@ -1425,7 +1425,7 @@ if(t.isBefore(e))n=Xe(t,e)
 else{n=Xe(e,t)
 n.milliseconds=-n.milliseconds
 n.months=-n.months}return n}function en(t,e){return function(n,r){var i,o
-if(null!==r&&!isNaN(+r)){E(e,"moment()."+e+"(period, number) is deprecated. Please use moment()."+e+"(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.")
+if(null!==r&&!isNaN(+r)){E(e,"moment()."+e+"(period, number) is deprecated. Please use moment()."+e+"(number, period). See //momentjs.com/guides/#/warnings/add-inverted-param/ for more info.")
 o=n
 n=r
 r=o}n="string"==typeof n?+n:n
@@ -1723,11 +1723,11 @@ e[hi]=w(t.substr(0,n))
 e[pi]=w(t.substr(n,2))
 e[di]=w(t.substr(r))})
 var Di,Ai=/[ap]\.?m?\.?/i,Ci=rt("Hours",!0),Ri={calendar:Cr,longDateFormat:Rr,invalidDate:"Invalid date",ordinal:"%d",dayOfMonthOrdinalParse:zr,relativeTime:Nr,months:wi,monthsShort:xi,week:Ei,weekdays:Pi,weekdaysMin:Mi,weekdaysShort:ki,meridiemParse:Ai},zi={},Ni={},Ui=/^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/,Li=/^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/,Fi=/Z|[+-]\d\d(?::?\d\d)?/,qi=[["YYYYYY-MM-DD",/[+-]\d{6}-\d\d-\d\d/],["YYYY-MM-DD",/\d{4}-\d\d-\d\d/],["GGGG-[W]WW-E",/\d{4}-W\d\d-\d/],["GGGG-[W]WW",/\d{4}-W\d\d/,!1],["YYYY-DDD",/\d{4}-\d{3}/],["YYYY-MM",/\d{4}-\d\d/,!1],["YYYYYYMMDD",/[+-]\d{10}/],["YYYYMMDD",/\d{8}/],["GGGG[W]WWE",/\d{4}W\d{3}/],["GGGG[W]WW",/\d{4}W\d{2}/,!1],["YYYYDDD",/\d{7}/]],Yi=[["HH:mm:ss.SSSS",/\d\d:\d\d:\d\d\.\d+/],["HH:mm:ss,SSSS",/\d\d:\d\d:\d\d,\d+/],["HH:mm:ss",/\d\d:\d\d:\d\d/],["HH:mm",/\d\d:\d\d/],["HHmmss.SSSS",/\d\d\d\d\d\d\.\d+/],["HHmmss,SSSS",/\d\d\d\d\d\d,\d+/],["HHmmss",/\d\d\d\d\d\d/],["HHmm",/\d\d\d\d/],["HH",/\d\d/]],Hi=/^\/?Date\((\-?\d+)/i,Bi=/^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/,Wi={UT:0,GMT:0,EDT:-240,EST:-300,CDT:-300,CST:-360,MDT:-360,MST:-420,PDT:-420,PST:-480}
-e.createFromInputFallback=O("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",function(t){t._d=new Date(t._i+(t._useUTC?" UTC":""))})
+e.createFromInputFallback=O("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to //momentjs.com/guides/#/warnings/js-date/ for more info.",function(t){t._d=new Date(t._i+(t._useUTC?" UTC":""))})
 e.ISO_8601=function(){}
 e.RFC_2822=function(){}
-var Vi=O("moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/",function(){var t=Pe.apply(null,arguments)
-return this.isValid()&&t.isValid()?t<this?this:t:y()}),Ki=O("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",function(){var t=Pe.apply(null,arguments)
+var Vi=O("moment().min is deprecated, use moment.max instead. //momentjs.com/guides/#/warnings/min-max/",function(){var t=Pe.apply(null,arguments)
+return this.isValid()&&t.isValid()?t<this?this:t:y()}),Ki=O("moment().max is deprecated, use moment.min instead. //momentjs.com/guides/#/warnings/min-max/",function(){var t=Pe.apply(null,arguments)
 return this.isValid()&&t.isValid()?t>this?this:t:y()}),Gi=function(){return Date.now?Date.now():+new Date},$i=["year","quarter","month","week","day","hour","minute","second","millisecond"]
 ze("Z",":")
 ze("ZZ","")
@@ -1892,8 +1892,8 @@ ao.zoneName=Gn
 ao.dates=O("dates accessor is deprecated. Use date instead.",no)
 ao.months=O("months accessor is deprecated. Use month instead",vt)
 ao.years=O("years accessor is deprecated. Use year instead",mi)
-ao.zone=O("moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",qe)
-ao.isDSTShifted=O("isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",Ke)
+ao.zone=O("moment().zone is deprecated, use moment().utcOffset instead. //momentjs.com/guides/#/warnings/zone/",qe)
+ao.isDSTShifted=O("isDSTShifted is deprecated. See //momentjs.com/guides/#/warnings/dst-shifted/ for more information",Ke)
 var so=I.prototype
 so.calendar=j
 so.longDateFormat=T
@@ -4432,7 +4432,7 @@ t.exports=r},function(t,e,n){var r=n(17),i=r(Object,"create")
 t.exports=i},function(t,e,n){function r(t,e){var n=t.__data__
 return i(e)?n["string"==typeof e?"string":"hash"]:n.map}var i=n(312)
 t.exports=r},function(t){function e(t){return null!=t&&"object"==typeof t}t.exports=e},function(t){"use strict"
-function e(t){for(var e=arguments.length-1,n="Minified React error #"+t+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant="+t,r=0;r<e;r++)n+="&args[]="+encodeURIComponent(arguments[r+1])
+function e(t){for(var e=arguments.length-1,n="Minified React error #"+t+"; visit //facebook.github.io/react/docs/error-decoder.html?invariant="+t,r=0;r<e;r++)n+="&args[]="+encodeURIComponent(arguments[r+1])
 n+=" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
 var i=new Error(n)
 i.name="Invariant Violation"
@@ -5231,7 +5231,7 @@ e.resolve=u
 e.resolveObject=a
 e.format=o
 e.Url=r
-var f=/^([a-z0-9.+-]+:)/i,l=/:[0-9]*$/,h=/^(\/\/?(?!\/)[^\?\s]*)(\?[^\s]*)?$/,p=["<",">",'"',"`"," ","\r","\n","\t"],d=["{","}","|","\\","^","`"].concat(p),v=["'"].concat(d),y=["%","/","?",";","#"].concat(v),_=["/","?","#"],g=/^[+a-z0-9A-Z_-]{0,63}$/,m=/^([+a-z0-9A-Z_-]{0,63})(.*)$/,b={javascript:!0,"javascript:":!0},w={javascript:!0,"javascript:":!0},x={http:!0,https:!0,ftp:!0,gopher:!0,file:!0,"http:":!0,"https:":!0,"ftp:":!0,"gopher:":!0,"file:":!0},S=n(111)
+var f=/^([a-z0-9.+-]+:)/i,l=/:[0-9]*$/,h=/^(\/\/?(?!\/)[^\?\s]*)(\?[^\s]*)?$/,p=["<",">",'"',"`"," ","\r","\n","\t"],d=["{","}","|","\\","^","`"].concat(p),v=["'"].concat(d),y=["%","/","?",";","#"].concat(v),_=["/","?","#"],g=/^[+a-z0-9A-Z_-]{0,63}$/,m=/^([+a-z0-9A-Z_-]{0,63})(.*)$/,b={javascript:!0,"javascript:":!0},w={javascript:!0,"javascript:":!0},x={!0,https:!0,ftp:!0,gopher:!0,file:!0,"":!0,"https:":!0,"ftp:":!0,"gopher:":!0,"file:":!0},S=n(111)
 r.prototype.parse=function(t,e,n){if(!c.isString(t))throw new TypeError("Parameter 'url' must be a string, not "+typeof t)
 var r=t.indexOf("?"),i=-1!==r&&r<t.indexOf("#")?"?":"#",o=t.split(i),u=/\\/g
 o[0]=o[0].replace(u,"/")
@@ -8134,7 +8134,7 @@ if("app"===site){n(137)
 n(390)
 n(391)}},function(t,e,n){"use strict"
 t.exports=n(152)},function(t,e,n){"use strict"
-function r(t){for(var e=arguments.length-1,n="Minified React error #"+t+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant="+t,r=0;r<e;r++)n+="&args[]="+encodeURIComponent(arguments[r+1])
+function r(t){for(var e=arguments.length-1,n="Minified React error #"+t+"; visit //facebook.github.io/react/docs/error-decoder.html?invariant="+t,r=0;r<e;r++)n+="&args[]="+encodeURIComponent(arguments[r+1])
 e=Error(n+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.")
 e.name="Invariant Violation"
 e.framesToPop=1
@@ -8234,7 +8234,7 @@ return"abcdefghijklmnopqrst"===Object.keys(Object.assign({},r)).join("")}catch(t
 for(var c in o)r.call(o,c)&&(a[c]=o[c])
 if(n){u=n(o)
 for(var f=0;f<u.length;f++)i.call(o,u[f])&&(a[u[f]]=o[u[f]])}}return a}},function(t,e,n){"use strict"
-function r(t){for(var e=arguments.length-1,n="Minified React error #"+t+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant="+t,r=0;r<e;r++)n+="&args[]="+encodeURIComponent(arguments[r+1])
+function r(t){for(var e=arguments.length-1,n="Minified React error #"+t+"; visit //facebook.github.io/react/docs/error-decoder.html?invariant="+t,r=0;r<e;r++)n+="&args[]="+encodeURIComponent(arguments[r+1])
 e=Error(n+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.")
 e.name="Invariant Violation"
 e.framesToPop=1
@@ -9229,9 +9229,9 @@ null==n&&(n=e.defaultValue,e=e.children,null!=e&&(null!=n&&r("92"),Array.isArray
 t._wrapperState={initialValue:""+n}}function Je(t,e){var n=e.value
 null!=n&&(n=""+n,n!==t.value&&(t.value=n),null==e.defaultValue&&(t.defaultValue=n))
 null!=e.defaultValue&&(t.defaultValue=e.defaultValue)}function Ze(t){var e=t.textContent
-e===t._wrapperState.initialValue&&(t.value=e)}function Xe(t){switch(t){case"svg":return"http://www.w3.org/2000/svg"
-case"math":return"http://www.w3.org/1998/Math/MathML"
-default:return"http://www.w3.org/1999/xhtml"}}function tn(t,e){return null==t||"http://www.w3.org/1999/xhtml"===t?Xe(e):"http://www.w3.org/2000/svg"===t&&"foreignObject"===e?"http://www.w3.org/1999/xhtml":t}function en(t,e){if(e){var n=t.firstChild
+e===t._wrapperState.initialValue&&(t.value=e)}function Xe(t){switch(t){case"svg":return"//www.w3.org/2000/svg"
+case"math":return"//www.w3.org/1998/Math/MathML"
+default:return"//www.w3.org/1999/xhtml"}}function tn(t,e){return null==t||"//www.w3.org/1999/xhtml"===t?Xe(e):"//www.w3.org/2000/svg"===t&&"foreignObject"===e?"//www.w3.org/1999/xhtml":t}function en(t,e){if(e){var n=t.firstChild
 if(n&&n===t.lastChild&&3===n.nodeType){n.nodeValue=e
 return}}t.textContent=e}function nn(t,e){t=t.style
 for(var n in e)if(e.hasOwnProperty(n)){var r=0===n.indexOf("--"),i=n,o=e[n]
@@ -9388,7 +9388,7 @@ u.hasOwnProperty(a)&&(s.attributeName=u[a])
 o.hasOwnProperty(a)&&(s.attributeNamespace=o[a])
 t.hasOwnProperty(a)&&(s.mutationMethod=t[a])
 Tn[a]=s}}},Tn={},Dn=jn,An=Dn.MUST_USE_PROPERTY,Cn=Dn.HAS_BOOLEAN_VALUE,Rn=Dn.HAS_NUMERIC_VALUE,zn=Dn.HAS_POSITIVE_NUMERIC_VALUE,Nn=Dn.HAS_OVERLOADED_BOOLEAN_VALUE,Un=Dn.HAS_STRING_BOOLEAN_VALUE,Ln={Properties:{allowFullScreen:Cn,async:Cn,autoFocus:Cn,autoPlay:Cn,capture:Nn,checked:An|Cn,cols:zn,contentEditable:Un,controls:Cn,default:Cn,defer:Cn,disabled:Cn,download:Nn,draggable:Un,formNoValidate:Cn,hidden:Cn,loop:Cn,multiple:An|Cn,muted:An|Cn,noValidate:Cn,open:Cn,playsInline:Cn,readOnly:Cn,required:Cn,reversed:Cn,rows:zn,rowSpan:Rn,scoped:Cn,seamless:Cn,selected:An|Cn,size:zn,start:Rn,span:zn,spellCheck:Un,style:0,tabIndex:0,itemScope:Cn,acceptCharset:0,className:0,htmlFor:0,httpEquiv:0,value:Un},DOMAttributeNames:{acceptCharset:"accept-charset",className:"class",htmlFor:"for",httpEquiv:"http-equiv"},DOMMutationMethods:{value:function(t,e){if(null==e)return t.removeAttribute("value")
-"number"!==t.type||!1===t.hasAttribute("value")?t.setAttribute("value",""+e):t.validity&&!t.validity.badInput&&t.ownerDocument.activeElement!==t&&t.setAttribute("value",""+e)}}},Fn=Dn.HAS_STRING_BOOLEAN_VALUE,qn={xlink:"http://www.w3.org/1999/xlink",xml:"http://www.w3.org/XML/1998/namespace"},Yn={Properties:{autoReverse:Fn,externalResourcesRequired:Fn,preserveAlpha:Fn},DOMAttributeNames:{autoReverse:"autoReverse",externalResourcesRequired:"externalResourcesRequired",preserveAlpha:"preserveAlpha"},DOMAttributeNamespaces:{xlinkActuate:qn.xlink,xlinkArcrole:qn.xlink,xlinkHref:qn.xlink,xlinkRole:qn.xlink,xlinkShow:qn.xlink,xlinkTitle:qn.xlink,xlinkType:qn.xlink,xmlBase:qn.xml,xmlLang:qn.xml,xmlSpace:qn.xml}},Hn=/[\-\:]([a-z])/g
+"number"!==t.type||!1===t.hasAttribute("value")?t.setAttribute("value",""+e):t.validity&&!t.validity.badInput&&t.ownerDocument.activeElement!==t&&t.setAttribute("value",""+e)}}},Fn=Dn.HAS_STRING_BOOLEAN_VALUE,qn={xlink:"//www.w3.org/1999/xlink",xml:"//www.w3.org/XML/1998/namespace"},Yn={Properties:{autoReverse:Fn,externalResourcesRequired:Fn,preserveAlpha:Fn},DOMAttributeNames:{autoReverse:"autoReverse",externalResourcesRequired:"externalResourcesRequired",preserveAlpha:"preserveAlpha"},DOMAttributeNamespaces:{xlinkActuate:qn.xlink,xlinkArcrole:qn.xlink,xlinkHref:qn.xlink,xlinkRole:qn.xlink,xlinkShow:qn.xlink,xlinkTitle:qn.xlink,xlinkType:qn.xlink,xmlBase:qn.xml,xmlLang:qn.xml,xmlSpace:qn.xml}},Hn=/[\-\:]([a-z])/g
 "accent-height alignment-baseline arabic-form baseline-shift cap-height clip-path clip-rule color-interpolation color-interpolation-filters color-profile color-rendering dominant-baseline enable-background fill-opacity fill-rule flood-color flood-opacity font-family font-size font-size-adjust font-stretch font-style font-variant font-weight glyph-name glyph-orientation-horizontal glyph-orientation-vertical horiz-adv-x horiz-origin-x image-rendering letter-spacing lighting-color marker-end marker-mid marker-start overline-position overline-thickness paint-order panose-1 pointer-events rendering-intent shape-rendering stop-color stop-opacity strikethrough-position strikethrough-thickness stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width text-anchor text-decoration text-rendering underline-position underline-thickness unicode-bidi unicode-range units-per-em v-alphabetic v-hanging v-ideographic v-mathematical vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mode x-height xlink:actuate xlink:arcrole xlink:href xlink:role xlink:show xlink:title xlink:type xml:base xmlns:xlink xml:lang xml:space".split(" ").forEach(function(t){var e=t.replace(Hn,a)
 Yn.Properties[e]=0
 Yn.DOMAttributeNames[e]=t})
@@ -9562,7 +9562,7 @@ Ri=function(){Ni=null
 Ui=!1
 Li=-1}}else Ci=window.requestIdleCallback,Ri=window.cancelIdleCallback
 else Ci=function(t){return setTimeout(function(){t({timeRemaining:function(){return 1/0}})})},Ri=function(t){clearTimeout(t)}
-var Vi=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,Ki={},Gi={},$i={html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},Qi=void 0,Ji=function(t){return"undefined"!=typeof MSApp&&MSApp.execUnsafeLocalFunction?function(e,n){MSApp.execUnsafeLocalFunction(function(){return t(e,n)})}:t}(function(t,e){if(t.namespaceURI!==$i.svg||"innerHTML"in t)t.innerHTML=e
+var Vi=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,Ki={},Gi={},$i={html:"//www.w3.org/1999/xhtml",mathml:"//www.w3.org/1998/Math/MathML",svg:"//www.w3.org/2000/svg"},Qi=void 0,Ji=function(t){return"undefined"!=typeof MSApp&&MSApp.execUnsafeLocalFunction?function(e,n){MSApp.execUnsafeLocalFunction(function(){return t(e,n)})}:t}(function(t,e){if(t.namespaceURI!==$i.svg||"innerHTML"in t)t.innerHTML=e
 else{Qi=Qi||document.createElement("div")
 Qi.innerHTML="<svg>"+e+"</svg>"
 for(e=Qi.firstChild;t.firstChild;)t.removeChild(t.firstChild)
@@ -9763,7 +9763,7 @@ for(var c in o)r.call(o,c)&&(a[c]=o[c])
 if(n){u=n(o)
 for(var f=0;f<u.length;f++)i.call(o,u[f])&&(a[u[f]]=o[u[f]])}}return a}},function(t,e,n){"use strict"
 var r=n(9),i=n(10),o=n(78)
-t.exports=function(){function t(t,e,n,r,u,a){a!==o&&i(!1,"Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types")}function e(){return t}t.isRequired=t
+t.exports=function(){function t(t,e,n,r,u,a){a!==o&&i(!1,"Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at //fb.me/use-check-prop-types")}function e(){return t}t.isRequired=t
 var n={array:t,bool:t,func:t,number:t,object:t,string:t,symbol:t,any:t,arrayOf:e,element:t,instanceOf:e,node:t,objectOf:e,oneOf:e,oneOfType:e,shape:e,exact:e}
 n.checkPropTypes=r
 n.PropTypes=n
@@ -11336,10 +11336,10 @@ null==h&&(h=s===e.SHARED_CDN)
 null==o&&h&&(o=i)
 o&&(s=s.replace("res.cloudinary.com","res-"+(crc32(t)%5+1)+".cloudinary.com"))
 l="https://"+s}else if(u){p=i?"a"+(crc32(t)%5+1)+".":""
-l="http://"+p+u}else{c=r?n+"-":""
+l="//"+p+u}else{c=r?n+"-":""
 d=i?"-"+(crc32(t)%5+1):""
 f=[c,"res",d,".cloudinary.com"].join("")
-l="http://"+f}h&&(l+="/"+n)
+l="//"+f}h&&(l+="/"+n)
 return l}
 p=function(t){return encodeURIComponent(t).replace(/%3A/g,":").replace(/%2F/g,"/")}
 e.merge=function(t,e){var n,r
@@ -12863,7 +12863,7 @@ t.exports=function(t,e){function n(t){var e=t&&(P&&t[P]||t[k])
 if("function"==typeof e)return e}function c(t,e){return t===e?0!==t||1/t==1/e:t!==t&&e!==e}function f(t){this.message=t
 this.stack=""}function l(t){function n(n,r,o,u,s,c,l){u=u||M
 c=c||o
-if(l!==a)if(e)i(!1,"Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types")
+if(l!==a)if(e)i(!1,"Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at //fb.me/use-check-prop-types")
 else;return null==r[o]?n?new f(null===r[o]?"The "+s+" `"+c+"` is marked as required in `"+u+"`, but its value is `null`.":"The "+s+" `"+c+"` is marked as required in `"+u+"`, but its value is `undefined`."):null:t(r,o,u,s,c)}var r=n.bind(null,!1)
 r.isRequired=n.bind(null,!0)
 return r}function h(t){function e(e,n,r,i,o){var u=e[n]

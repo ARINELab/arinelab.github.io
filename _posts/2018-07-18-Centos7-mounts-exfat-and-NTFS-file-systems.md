@@ -89,15 +89,15 @@ sudo mount /dev/sdc1 /mnt
 sudo yum install fuse-exfat
 ```
 
-如果提示未找着软件包, 说明您未添加 `rpmfusion` 源, 请先添加下载 [rpmfusion-free-release-7.noarch.rpm](http://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm)
+如果提示未找着软件包, 说明您未添加 `rpmfusion` 源, 请先添加下载 [rpmfusion-free-release-7.noarch.rpm](//download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm)
 
 *   可尝试添加源后, 再安装
 
-*   下载 [`fuse-exfat`包](http://download1.rpmfusion.org/free/el/updates/7/x86_64/f) (必须) 和 [`exfat-utils`](http://download1.rpmfusion.org/free/el/updates/7/x86_64/e)包直接进行安装
+*   下载 [`fuse-exfat`包](//download1.rpmfusion.org/free/el/updates/7/x86_64/f) (必须) 和 [`exfat-utils`](//download1.rpmfusion.org/free/el/updates/7/x86_64/e)包直接进行安装
 
-下载地址 [`fuse-exfat-1.0.1-1.el7.x86_64.rpm`](http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/fuse-exfat-1.0.1-1.el7.x86_64.rpm)
+下载地址 [`fuse-exfat-1.0.1-1.el7.x86_64.rpm`](//download1.rpmfusion.org/free/el/updates/7/x86_64/f/fuse-exfat-1.0.1-1.el7.x86_64.rpm)
 
-下载地址 [`exfat-utils-1.0.1.el7.x86_64.rpm`](http://download1.rpmfusion.org/free/el/updates/7/x86_64/e/exfat-utils-1.0.1-1.el7.x86_64.rpm)
+下载地址 [`exfat-utils-1.0.1.el7.x86_64.rpm`](//download1.rpmfusion.org/free/el/updates/7/x86_64/e/exfat-utils-1.0.1-1.el7.x86_64.rpm)
 
 然后直接安装
 
@@ -116,11 +116,11 @@ sudo rpm -ivh exfat-utils-1.0.1-1.el7.x86_64.rpm
 可以下载``src.rpm源代码包, 并自行使用`scons`和`gcc`编译, 也可以在`rpmfusion`下载源代码`RPM`, 然后通过构建`RPM` 来安装. 这里采用构建 RPM 的方式（这样安装卸载都很方便）。
 
 下载地址 :
-[http://download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html](http://download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html)
+[//download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html](//download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html)
 
 分别下载：fuse-exfat-1.0.1-1-el6.src.rpm 和 exfat-utils-1.0.1-1.el6.src.rpm
 
-[http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/](http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/)
+[//download1.rpmfusion.org/free/el/updates/7/x86_64/f/](//download1.rpmfusion.org/free/el/updates/7/x86_64/f/)
 
 *   编译安装：
 
@@ -196,7 +196,7 @@ sudo mount /dev/sdc1 /mnt
 yum install fuse ntfs-3g -y
 ```
 
-`nfts-3g` 并不再标准的源中, 如果提示未找到软件包, 请先添加 `EPEL` 源, 参见 [CentOS7/RHEL7 安装 EPEL 扩展仓库步骤详解](http://blog.csdn.net/gatieme/article/details/70232358)
+`nfts-3g` 并不再标准的源中, 如果提示未找到软件包, 请先添加 `EPEL` 源, 参见 [CentOS7/RHEL7 安装 EPEL 扩展仓库步骤详解](//blog.csdn.net/gatieme/article/details/70232358)
 
 注：如果你在使用 CentOS 5.3 或更旧版本, 那么你需要安装来自 `ELRepo` 的`mod-fuse`
 
@@ -206,7 +206,7 @@ yum install fuse ntfs-3g -y
 
 目前 `2017-04-19`, `ntfs-3g` 的最新版本是 `2017-03-23`
 
-官网 : [http://www.tuxera.com/community/open-source-ntfs-3g/](http://www.tuxera.com/community/open-source-ntfs-3g/)
+官网 : [//www.tuxera.com/community/open-source-ntfs-3g/](//www.tuxera.com/community/open-source-ntfs-3g/)
 
 `ntfs-3g`下载页面 : [https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz](https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz)
 

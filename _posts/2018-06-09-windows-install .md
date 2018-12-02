@@ -53,9 +53,9 @@ tags:
     
 ```
 https://msdn.itellyou.cn/  ---> 下载纯净版镜像，需要迅雷解码下载链接（还有各类windows 的软件安装包）
-http://www.yishimei.cn/  ---> 各类教程、工具的下载
-http://www.yishimei.cn/network/319.html  --> windows 激活工具下载
-http://www.bigbaicai.com/   ---> 启动盘目前是用他们家制作，教程网站都有。
+//www.yishimei.cn/  ---> 各类教程、工具的下载
+//www.yishimei.cn/network/319.html  --> windows 激活工具下载
+//www.bigbaicai.com/   ---> 启动盘目前是用他们家制作，教程网站都有。
             `老毛桃`、`u深度``，`u大侠`等等，自行更换。如出一辙。
 ```
 

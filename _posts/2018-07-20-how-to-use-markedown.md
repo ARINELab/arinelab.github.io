@@ -125,7 +125,7 @@ Markdown 语法：
 Markdown 语法：
 
 ```
-![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+![GitHub set up](//zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![Alt Text](url)
 ```
 
@@ -133,7 +133,7 @@ Markdown 语法：
 如果是 MWeb 的文档库中的文档，还可以用拖放图片、`CMD + V` 粘贴、`CMD + Option + I` 导入这三种方式来增加图片。
 效果如下：
 
-![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+![GitHub set up](//zh.mweb.im/asset/img/set-up-git.gif)
 
 ## 链接
 
@@ -141,8 +141,8 @@ Markdown 语法：
 
 ```
 email <example@example.com>
-[GitHub](http://github.com)
-自动生成连接  <http://www.github.com/>
+[GitHub](//github.com)
+自动生成连接  <//www.github.com/>
 ```
 
 `Control + Shift + L` 可插入Markdown语法。
@@ -150,8 +150,8 @@ email <example@example.com>
 效果如下：
 
 Email 连接： <example@example.com>
-[连接标题Github网站](http://github.com)
-自动生成连接像： <http://www.github.com/> 这样
+[连接标题Github网站](//github.com)
+自动生成连接像： <//www.github.com/> 这样
 
 ## 区块引用
 
@@ -248,7 +248,7 @@ cond(yes)->e
 cond(no)->op
 ```
 
-更多请参考：<http://bramp.github.io/js-sequence-diagrams/>, <http://adrai.github.io/flowchart.js/>
+更多请参考：<//bramp.github.io/js-sequence-diagrams/>, <//adrai.github.io/flowchart.js/>
 
 ## 表格
 
@@ -377,5 +377,5 @@ IT控
 
 9个节目： 体育、是点链接、时尚恋战、影港，情感、音乐、旅游、周末频道--话题、动漫
 
-http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
+//www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html
 

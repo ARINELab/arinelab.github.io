@@ -22,10 +22,10 @@ tags:
 ```
 
 ```
-http://mirrors.aliyun.com              阿里云镜像站
+//mirrors.aliyun.com              阿里云镜像站
 https://mirrors.tuna.tsinghua.edu.cn   清华大学镜像站
-http://mirrors.sohu.com/               搜狐镜像站
-http://mirrors.163.com/                网易镜像站
+//mirrors.sohu.com/               搜狐镜像站
+//mirrors.163.com/                网易镜像站
 ```
 
 ### UltraISO将ISO镜像刻录到U盘

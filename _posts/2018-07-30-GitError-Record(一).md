@@ -64,7 +64,7 @@ git push origin master
 
 ### 5. 参考链接
 
-1. http://www.cnblogs.com/renkangke/archive/2013/05/31/conquerAndroid.html
+1. //www.cnblogs.com/renkangke/archive/2013/05/31/conquerAndroid.html
 
 2. https://www.jianshu.com/p/8d26730386f3
 

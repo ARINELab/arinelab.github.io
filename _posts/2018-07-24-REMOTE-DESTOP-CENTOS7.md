@@ -194,8 +194,8 @@ kill 9 PID
 
 ### 13. 参考资料
 
-1. http://tigervnc.org/doc/Xvnc.html
+1. //tigervnc.org/doc/Xvnc.html
 2. https://blog.csdn.net/kwame211/article/details/76014361
-3. http://os.51cto.com/art/201103/249398.htm
+3. //os.51cto.com/art/201103/249398.htm
 
 

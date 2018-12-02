@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="//www.w3.org/2005/Atom">
   <channel>
     <title>ARINE Lab</title>
     <description>nzwang-Lab is an ARtificial INtelligencE LABoratory locate at LianYunGang,China and we specialise in Artificial Intelligence, Machine Learning and Robotics.</description>
     <link>https://www.nzwang-lab.net//</link>
     <atom:link href="https://www.nzwang-lab.net//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 14 Nov 2018 09:48:30 +0800</pubDate>
-    <lastBuildDate>Wed, 14 Nov 2018 09:48:30 +0800</lastBuildDate>
+    <pubDate>Sat, 17 Nov 2018 14:56:32 +0800</pubDate>
+    <lastBuildDate>Sat, 17 Nov 2018 14:56:32 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -72,7 +72,7 @@ git push origin master
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;http://www.cnblogs.com/renkangke/archive/2013/05/31/conquerAndroid.html&lt;/p&gt;
+    &lt;p&gt;//www.cnblogs.com/renkangke/archive/2013/05/31/conquerAndroid.html&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;https://www.jianshu.com/p/8d26730386f3&lt;/p&gt;
@@ -256,9 +256,9 @@ kill 9 PID
 &lt;h3 id=&quot;13-参考资料&quot;&gt;13. 参考资料&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;http://tigervnc.org/doc/Xvnc.html&lt;/li&gt;
+  &lt;li&gt;//tigervnc.org/doc/Xvnc.html&lt;/li&gt;
   &lt;li&gt;https://blog.csdn.net/kwame211/article/details/76014361&lt;/li&gt;
-  &lt;li&gt;http://os.51cto.com/art/201103/249398.htm&lt;/li&gt;
+  &lt;li&gt;//os.51cto.com/art/201103/249398.htm&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
@@ -497,7 +497,7 @@ __这些文字会生成`&amp;lt;strong&amp;gt;`__
 
 &lt;p&gt;Markdown 语法：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![GitHub set up](//zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![Alt Text](url)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -505,15 +505,15 @@ __这些文字会生成`&amp;lt;strong&amp;gt;`__
 如果是 MWeb 的文档库中的文档，还可以用拖放图片、&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + V&lt;/code&gt; 粘贴、&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Option + I&lt;/code&gt; 导入这三种方式来增加图片。
 效果如下：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://zh.mweb.im/asset/img/set-up-git.gif&quot; alt=&quot;GitHub set up&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//zh.mweb.im/asset/img/set-up-git.gif&quot; alt=&quot;GitHub set up&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;链接&quot;&gt;链接&lt;/h2&gt;
 
 &lt;p&gt;Markdown 语法：&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;email &amp;lt;example@example.com&amp;gt;
-[GitHub](http://github.com)
-自动生成连接  &amp;lt;http://www.github.com/&amp;gt;
+[GitHub](//github.com)
+自动生成连接  &amp;lt;//www.github.com/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Control + Shift + L&lt;/code&gt; 可插入Markdown语法。
@@ -521,8 +521,8 @@ __这些文字会生成`&amp;lt;strong&amp;gt;`__
 效果如下：&lt;/p&gt;
 
 &lt;p&gt;Email 连接： &lt;a href=&quot;mailto:example@example.com&quot;&gt;example@example.com&lt;/a&gt;
-&lt;a href=&quot;http://github.com&quot;&gt;连接标题Github网站&lt;/a&gt;
-自动生成连接像： &lt;a href=&quot;http://www.github.com/&quot;&gt;http://www.github.com/&lt;/a&gt; 这样&lt;/p&gt;
+&lt;a href=&quot;//github.com&quot;&gt;连接标题Github网站&lt;/a&gt;
+自动生成连接像： &lt;a href=&quot;//www.github.com/&quot;&gt;//www.github.com/&lt;/a&gt; 这样&lt;/p&gt;
 
 &lt;h2 id=&quot;区块引用&quot;&gt;区块引用&lt;/h2&gt;
 
@@ -618,7 +618,7 @@ cond(yes)-&amp;gt;e
 cond(no)-&amp;gt;op
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;更多请参考：&lt;a href=&quot;http://bramp.github.io/js-sequence-diagrams/&quot;&gt;http://bramp.github.io/js-sequence-diagrams/&lt;/a&gt;, &lt;a href=&quot;http://adrai.github.io/flowchart.js/&quot;&gt;http://adrai.github.io/flowchart.js/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更多请参考：&lt;a href=&quot;//bramp.github.io/js-sequence-diagrams/&quot;&gt;//bramp.github.io/js-sequence-diagrams/&lt;/a&gt;, &lt;a href=&quot;//adrai.github.io/flowchart.js/&quot;&gt;//adrai.github.io/flowchart.js/&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;表格&quot;&gt;表格&lt;/h2&gt;
 
@@ -746,7 +746,7 @@ IT控
 
 &lt;p&gt;9个节目： 体育、是点链接、时尚恋战、影港，情感、音乐、旅游、周末频道–话题、动漫&lt;/p&gt;
 
-&lt;p&gt;http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html&lt;/p&gt;
+&lt;p&gt;//www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -778,10 +778,10 @@ IT控
 3. CentOS7光盘镜像;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://mirrors.aliyun.com              阿里云镜像站
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//mirrors.aliyun.com              阿里云镜像站
 https://mirrors.tuna.tsinghua.edu.cn   清华大学镜像站
-http://mirrors.sohu.com/               搜狐镜像站
-http://mirrors.163.com/                网易镜像站
+//mirrors.sohu.com/               搜狐镜像站
+//mirrors.163.com/                网易镜像站
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;ultraiso将iso镜像刻录到u盘&quot;&gt;UltraISO将ISO镜像刻录到U盘&lt;/h3&gt;
@@ -865,7 +865,7 @@ end
 
 &lt;hr /&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://bio3d.colorado.edu/imod/doc/man/tif2mrc.html&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;//bio3d.colorado.edu/imod/doc/man/tif2mrc.html&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	tif2mrc [options]  TIFF_input_files...  MRC_output_file
@@ -901,9 +901,9 @@ mkdir ../tif_list &lt;span class=&quot;c&quot;&gt;# a dir for tif_lists&lt;/span
 &lt;hr /&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;http://bio3d.colorado.edu/imod/doc/man/tif2mrc.html&lt;/li&gt;
+  &lt;li&gt;//bio3d.colorado.edu/imod/doc/man/tif2mrc.html&lt;/li&gt;
   &lt;li&gt;https://hpc.nih.gov/apps/IMOD.html&lt;/li&gt;
-  &lt;li&gt;http://bio3d.colorado.edu/imod/doc/mrc_format.txt&lt;/li&gt;
+  &lt;li&gt;//bio3d.colorado.edu/imod/doc/mrc_format.txt&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
@@ -967,7 +967,7 @@ CentOS Linux release 7.5.1804 (Core)
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
 目标：x86_64-redhat-linux
-配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=//bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 线程模型：posix
 gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) 
 
@@ -979,8 +979,8 @@ gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC)
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#配置第三方RPM源
 [root@gemfield.org ~]# rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
-[root@gemfield.org ~]# rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-获取http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+[root@gemfield.org ~]# rpm -Uvh //www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+获取//www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 准备中...                          ################################# [100%]
 正在升级/安装...
    1:elrepo-release-7.0-3.el7.elrepo  ################################# [100%]
@@ -1285,20 +1285,20 @@ sudo mount /dev/sdc1 /mnt
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install fuse-exfat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;如果提示未找着软件包, 说明您未添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;rpmfusion&lt;/code&gt; 源, 请先添加下载 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm&quot;&gt;rpmfusion-free-release-7.noarch.rpm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果提示未找着软件包, 说明您未添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;rpmfusion&lt;/code&gt; 源, 请先添加下载 &lt;a href=&quot;//download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm&quot;&gt;rpmfusion-free-release-7.noarch.rpm&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;可尝试添加源后, 再安装&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;下载 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fuse-exfat&lt;/code&gt;包&lt;/a&gt; (必须) 和 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/e&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat-utils&lt;/code&gt;&lt;/a&gt;包直接进行安装&lt;/p&gt;
+    &lt;p&gt;下载 &lt;a href=&quot;//download1.rpmfusion.org/free/el/updates/7/x86_64/f&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fuse-exfat&lt;/code&gt;包&lt;/a&gt; (必须) 和 &lt;a href=&quot;//download1.rpmfusion.org/free/el/updates/7/x86_64/e&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat-utils&lt;/code&gt;&lt;/a&gt;包直接进行安装&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;下载地址 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/fuse-exfat-1.0.1-1.el7.x86_64.rpm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fuse-exfat-1.0.1-1.el7.x86_64.rpm&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载地址 &lt;a href=&quot;//download1.rpmfusion.org/free/el/updates/7/x86_64/f/fuse-exfat-1.0.1-1.el7.x86_64.rpm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fuse-exfat-1.0.1-1.el7.x86_64.rpm&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;下载地址 &lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/e/exfat-utils-1.0.1-1.el7.x86_64.rpm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat-utils-1.0.1.el7.x86_64.rpm&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载地址 &lt;a href=&quot;//download1.rpmfusion.org/free/el/updates/7/x86_64/e/exfat-utils-1.0.1-1.el7.x86_64.rpm&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exfat-utils-1.0.1.el7.x86_64.rpm&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;然后直接安装&lt;/p&gt;
 
@@ -1316,11 +1316,11 @@ sudo rpm -ivh exfat-utils-1.0.1-1.el7.x86_64.rpm
 &lt;p&gt;可以下载``src.rpm源代码包, 并自行使用&lt;code class=&quot;highlighter-rouge&quot;&gt;scons&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt;编译, 也可以在&lt;code class=&quot;highlighter-rouge&quot;&gt;rpmfusion&lt;/code&gt;下载源代码&lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt;, 然后通过构建&lt;code class=&quot;highlighter-rouge&quot;&gt;RPM&lt;/code&gt; 来安装. 这里采用构建 RPM 的方式（这样安装卸载都很方便）。&lt;/p&gt;
 
 &lt;p&gt;下载地址 :
-&lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html&quot;&gt;http://download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;//download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html&quot;&gt;//download1.rpmfusion.org/free/el/updates/6/SRPMS/repoview/index.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;分别下载：fuse-exfat-1.0.1-1-el6.src.rpm 和 exfat-utils-1.0.1-1.el6.src.rpm&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/&quot;&gt;http://download1.rpmfusion.org/free/el/updates/7/x86_64/f/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//download1.rpmfusion.org/free/el/updates/7/x86_64/f/&quot;&gt;//download1.rpmfusion.org/free/el/updates/7/x86_64/f/&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;编译安装：&lt;/li&gt;
@@ -1391,7 +1391,7 @@ sudo mount /dev/sdc1 /mnt
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install fuse ntfs-3g -y
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nfts-3g&lt;/code&gt; 并不再标准的源中, 如果提示未找到软件包, 请先添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;EPEL&lt;/code&gt; 源, 参见 &lt;a href=&quot;http://blog.csdn.net/gatieme/article/details/70232358&quot;&gt;CentOS7/RHEL7 安装 EPEL 扩展仓库步骤详解&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nfts-3g&lt;/code&gt; 并不再标准的源中, 如果提示未找到软件包, 请先添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;EPEL&lt;/code&gt; 源, 参见 &lt;a href=&quot;//blog.csdn.net/gatieme/article/details/70232358&quot;&gt;CentOS7/RHEL7 安装 EPEL 扩展仓库步骤详解&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;注：如果你在使用 CentOS 5.3 或更旧版本, 那么你需要安装来自 &lt;code class=&quot;highlighter-rouge&quot;&gt;ELRepo&lt;/code&gt; 的&lt;code class=&quot;highlighter-rouge&quot;&gt;mod-fuse&lt;/code&gt;&lt;/p&gt;
 
@@ -1401,7 +1401,7 @@ sudo mount /dev/sdc1 /mnt
 
 &lt;p&gt;目前 &lt;code class=&quot;highlighter-rouge&quot;&gt;2017-04-19&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ntfs-3g&lt;/code&gt; 的最新版本是 &lt;code class=&quot;highlighter-rouge&quot;&gt;2017-03-23&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;官网 : &lt;a href=&quot;http://www.tuxera.com/community/open-source-ntfs-3g/&quot;&gt;http://www.tuxera.com/community/open-source-ntfs-3g/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官网 : &lt;a href=&quot;//www.tuxera.com/community/open-source-ntfs-3g/&quot;&gt;//www.tuxera.com/community/open-source-ntfs-3g/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ntfs-3g&lt;/code&gt;下载页面 : &lt;a href=&quot;https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz&quot;&gt;https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2017.3.23.tgz&lt;/a&gt;&lt;/p&gt;
 
@@ -1588,9 +1588,9 @@ mount /dev/sdb1 /mnt/windows/c
 &lt;p&gt;更换系统镜像&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://msdn.itellyou.cn/  ---&amp;gt; 下载纯净版镜像，需要迅雷解码下载链接（还有各类windows 的软件安装包）
-http://www.yishimei.cn/  ---&amp;gt; 各类教程、工具的下载
-http://www.yishimei.cn/network/319.html  --&amp;gt; windows 激活工具下载
-http://www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，教程网站都有。
+//www.yishimei.cn/  ---&amp;gt; 各类教程、工具的下载
+//www.yishimei.cn/network/319.html  --&amp;gt; windows 激活工具下载
+//www.bigbaicai.com/   ---&amp;gt; 启动盘目前是用他们家制作，教程网站都有。
             `老毛桃`、`u深度``，`u大侠`等等，自行更换。如出一辙。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
